@@ -10,5 +10,5 @@
 - Payable actions using EOSIO `notify` declarations
 
 ## What's next?
-- [Try EOSIO](./01_try-eosio.md): Try EOSIO in your browser with Gitpod.
+- [Try EOSIO](./01_try-eosio.md): Try Telos in your browser with Telos Studio
 - [Getting Started](./02_development-environment/introduction.md): Install EOSIO in your local development environment.

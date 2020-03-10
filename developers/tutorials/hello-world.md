@@ -65,8 +65,3 @@ Positionals:
 ```
 
 In order to upload a smart contract, we need an account to "own" the smart contract. It is advisable to keep you personal Telos account separate from any smart contracts accounts since a.\) naming the account something relevant to its purpose will be useful to you and anyone interacting with that account and b.\) we can give your personal account owner permission anyway. So... let's create an account for this contract!
-
-\[... To be continued\]
-
-
-

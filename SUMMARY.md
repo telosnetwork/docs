@@ -1,6 +1,7 @@
 # Table of contents
 
 - [Welcome to Telos](README.md)
+  - [Resources & Essentials](general/essentials.md)
 
 ## Users
 
@@ -8,43 +9,46 @@
 - [Getting Some TLOS](users/getting-some-tlos.md)
 
 ## Developers
-### Command Line
 
-- [CLEOS](command-line/cleos.md)
-
-## Building DApps
-
-- [Getting Started on Testnet](building-dapps/getting-started.md)
-- [Hello World!](building-dapps/hello-world.md)
-- [Building Your DApp with Javascript](building-dapps/interacting-with-the-network.md)
-
-## Misc
-
-- [Resources & Essentials](misc/essentials.md)
-
-## Telos Accounts
-
-- [Free Account Creator](telos-accounts/free-account-creator.md)
-- [Testnet Faucet](telos-accounts/testnet-faucet.md)
-- [Login With Telos](telos-accounts/login-with-telos.md)
-
-## Telos Persona
-
-- [Register](telos-persona/register.md)
-- [Sentiment](telos-persona/sentiment.md)
-- [Chat](telos-persona/chat.md)
-
-## Telos Decide
-
-- [Introduction](telos-decide/introduction.md)
-- [Treasuries](telos-decide/treasuries.md)
-- [Ballots](telos-decide/ballots.md)
-- [Voting](telos-decide/voting.md)
-- [Payrolls](telos-decide/payrolls.md)
-- [Workers](telos-decide/workers.md)
-- [Contract Integration](telos-decide/contract-integration.md)
-
-## Telos Works
-
-- [Introduction](telos-works/introduction.md)
-- [Make A Proposal](telos-works/make-a-proposal.md)
+- [Tutorials](tutorials/getting-started.md)
+  - [cleos](tutorials/cleos.md)
+  - [eosjs](tutorials/eosjs.md)
+  - [Hello World Contract](tutorials/hello-world.md)
+- [Features](features/index.md)
+  - [Decide](features/decide/introduction.md)
+    - [Ballots](features/decide/ballots.md)
+    - [Payrolls](features/decide/payrolls.md)
+    - [Treasuries](features/decide/treasuries.md)
+    - [Voting](features/decide/voting.md)
+    - [Workers](features/decide/workers.md)
+    - [Contract Integration](features/decide/contract-integration.md)
+  - [Works](features/works/introduction.md)
+    - [Make A Proposal](features/works/make-a-proposal.md)
+- [Platform](platform/index.md)
+  - [Try Telos](02_getting-started/01_try-eosio.md)
+  - [Development Environment](index/02_development-environment/README.md)
+    - [Prerequisites](getting-started/02_development-environment/02_introduction.md)
+    - [Before You Begin](getting-started/02_development-environment/03_before-you-begin.md)
+    - [Install the Contract Dev Toolkit](getting-started/02_development-environment/04_install-the-cdt.md)
+    - [Create Development Wallet](getting-started/02_development-environment/05_create-development-wallet.md)
+    - [Start keosd and nodeos](getting-started/02_development-environment/06_start-your-node-setup.md)
+    - [Create Test Accounts](getting-started/02_development-environment/07_create-test-accounts.md)
+  - [Smart Contract Development](getting-started/03_smart-contract-development/README.md)
+    - [Hello World Contract](getting-started/03_smart-contract-development/01_hello-world.md)
+    - [Deploy, Issue & Transfer Tokens](getting-started/03_smart-contract-development/02_deploy-issue-and-transfer-tokens.md)
+    - [Understanding ABI Files](getting-started/03_smart-contract-development/03_understanding-abi-files.md)
+    - [Data Persistence](getting-started/03_smart-contract-development/04_data-persistence.md)
+    - [Secondary Indices](getting-started/03_smart-contract-development/05_secondary-indices.md)
+    - [Adding Inline Actions](getting-started/03_smart-contract-development/06_adding-inline-actions.md)
+    - [Inline Actions to External Contracts](getting-started/03_smart-contract-development/07_inline-action-to-external-contract.md)
+    - [Creating & Linking Custom Permissions](getting-started/03_smart-contract-development/08_linking-custom-permission.md)
+    - [Payable Actions](getting-started/03_smart-contract-development/10_payable_actions.md)
+  - [Protocol](protocol/index.md)
+    - [Network Peer Protocol](protocol/03_network_peer_protocol.md)
+    - [Transactions Protocol](protocol/02_transactions_protocol.md)
+    - [Consensus Protocol](04_protocol/01_consensus_protocol.md)
+    - [Accounts & Permissions](protocol/04_accounts_and_permissions.md)
+  - [Overview](overview/index.md)
+    - [Core Concepts](01_overview/02_core_concepts.md)
+    - [Technical Features](01_overview/03_technical_features.md)
+    - [Platform & Toolchain](01_overview/01_platform_and_toolchain.md)

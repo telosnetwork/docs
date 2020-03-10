@@ -21,6 +21,3 @@ Hopefully you have already created a Telos account by now \(go to the Users -&gt
 To activate your Telos Testnet account, go to [this link](https://app.telos.net/testnet/developers), insert the account name that you want and a public \(owner\) key and active key. You have the option of using your public key for both fields \(it should be a long string of characters that start with "EOS..."\). After you have successfully submitted the form, give it a few minutes and then unlock the wallet \(in [SQRL](https://sqrlwallet.io/)\) or refresh your accounts \(in [Scatter](https://get-scatter.com/)\)
 
 From that same [link](https://app.telos.net/testnet/developers) insert your new account's 12-character name and click the "SEND TESTNET TELOS" button. You should see your new account's balance reflect the received testnet TLOS tokens within a few seconds. Congrats, you now own some Testnet Telos tokens! These tokens are the primary resource for being able to interact with the Telos \(Testnet\) network.
-
-
-
