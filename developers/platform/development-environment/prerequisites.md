@@ -70,5 +70,5 @@ _Only a sample of what you'll learn_
 
 ## What's Next?
 
-* [Before You Begin](03_before-you-begin.md): Steps to download and install binaries on your system.
+* [Before You Begin](before-you-begin.md): Steps to download and install binaries on your system.
 

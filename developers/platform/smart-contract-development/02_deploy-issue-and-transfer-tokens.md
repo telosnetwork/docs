@@ -29,7 +29,7 @@ cd eosio.contracts/contracts/eosio.token
 
 Before we can deploy the token contract we must create an account to deploy it to, we'll use the **eosio development key** for this account.
 
-\[\[info\]\] \| You need to unlock your wallet prior to the next step
+You need to unlock your wallet prior to the next step
 
 ```text
 cleos create account eosio eosio.token EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
@@ -149,5 +149,5 @@ Excellent! Everything adds up.
 
 ## What's Next?
 
-* [Understanding ABI Files](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/getting-started/03_smart-contract-development/03_understanding-ABI-files.md): Introduction to Application Binary Files \(ABI\) and how the ABI file correlates to the `eosio.token` contract.
+* [Understanding ABI Files](understanding-abi-files.md): Introduction to Application Binary Files \(ABI\) and how the ABI file correlates to the `eosio.token` contract.
 

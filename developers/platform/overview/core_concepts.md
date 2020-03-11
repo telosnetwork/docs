@@ -14,19 +14,19 @@ Wallets are clients that store keys that may or may not be associated with the p
 
 Permissions are arbitrary names used to define the requirements for a transaction sent on behalf of that permission. Permissions can be assigned for authority over specific contract actions by _linking authorization_ or linkauth.
 
-For more information about these concepts, see the [_Accounts and Permissions_](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/04_protocol/accounts_and_permissions/README.md) documentation. 
+For more information about these concepts, see the _Accounts and Permissions_ documentation. 
 
 ### Smart Contracts
 
 A smart contract is a piece of code that can execute on a blockchain and keep the state of contract execution as a part of the immutable history of that blockchain instance. Therefore, developers can rely on that blockchain as a trusted computation environment in which inputs, execution, and the results of a smart contract are independent and free of external influence.
 
-`youtube: https://www.youtube.com/watch?v=_I0dUL4kpTg`
+{% embed url="https://www.youtube.com/watch?v=\_I0dUL4kpTg" %}
 
 ### Delegated Proof of Stake \(DPOS\)
 
 The EOSIO platform implements a proven decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain called the _Delegated Proof of Stake_ \(DPOS\). Under this algorithm, if you hold tokens on a EOSIO-based blockchain, you can select block producers through a continuous approval voting system. Anyone can choose to participate in the block production and will be given an opportunity to produce blocks, provided they can persuade token holders to vote for them.
 
-For more information about DPOS BFT, see [EOSIO Consensus](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/04_protocol/01_consensus_protocol.md#3-eosio-consensus-dpos--abft).
+For more information about DPOS BFT, see [EOSIO Consensus](../protocol/consensus_protocol.md#1-overview).
 
 ## System Resources
 

@@ -10,11 +10,11 @@ An EOSIO blockchain is a highly efficient, deterministic, distributed state mach
 
 ### 1.1. Block Producers
 
-In the EOSIO ecosystem, block production and block validation are performed by special nodes called "block producers". Producers are elected by EOSIO stakeholders \(see [4. Producer Voting/Scheduling](01_consensus_protocol.md#4-producer-votingscheduling)\). Each producer runs an instance of an EOSIO node through the `nodeos` service. For this reason, producers that are on the active schedule to produce blocks are also called "active" or "producing" nodes.
+In the EOSIO ecosystem, block production and block validation are performed by special nodes called "block producers". Producers are elected by EOSIO stakeholders \(see [4. Producer Voting/Scheduling](consensus_protocol.md#producer-voting-scheduling)\). Each producer runs an instance of an EOSIO node through the `nodeos` service. For this reason, producers that are on the active schedule to produce blocks are also called "active" or "producing" nodes.
 
 ### 1.2. The Need for Consensus
 
-Block validation presents a challenge among any group of distributed nodes. A consensus model must be in place to validate such blocks in a fault tolerant way within the decentralized system. Consensus is the way for such distributed nodes and users to agree upon the current state of the blockchain \(see [3. EOSIO Consensus \(DPoS + aBFT\)](01_consensus_protocol.md#3-eosio-consensus-dpos--abft)\).
+Block validation presents a challenge among any group of distributed nodes. A consensus model must be in place to validate such blocks in a fault tolerant way within the decentralized system. Consensus is the way for such distributed nodes and users to agree upon the current state of the blockchain \(see [3. EOSIO Consensus \(DPoS + aBFT\)](consensus_protocol.md#3-eosio-consensus-dpos-abft)\).
 
 ## 2. Consensus Models
 
@@ -39,7 +39,7 @@ The actual native consensus model used in EOSIO has no concept of delegations/vo
 
 ### 3.1. Layer 1: Native Consensus \(aBFT\)
 
-This layer ultimately decides which blocks, received and synced among the elected producers, eventually become final, and hence permanently recorded in the blockchain. It gets a schedule of producers proposed by the second layer \(see [3.2. Layer 2: Delegated PoS](01_consensus_protocol.md#32-layer-2-delegated-pos-dpos)\) and uses that schedule to determine which blocks are correctly signed by the appropriate producer. For byzantine fault tolerance, the layer uses a two-stage block confirmation process by which a two-thirds supermajority of producers from the current scheduled set confirm each block twice. The first confirmation stage proposes a last irreversible block \(LIB\). The second stage confirms the proposed LIB as final. At this point, the block becomes irreversible. This layer is also used to signal producer schedule changes, if any, at the beginning of every schedule round.
+This layer ultimately decides which blocks, received and synced among the elected producers, eventually become final, and hence permanently recorded in the blockchain. It gets a schedule of producers proposed by the second layer \(see [3.2. Layer 2: Delegated PoS](consensus_protocol.md#3-2-layer-2-delegated-pos-dpos)\) and uses that schedule to determine which blocks are correctly signed by the appropriate producer. For byzantine fault tolerance, the layer uses a two-stage block confirmation process by which a two-thirds supermajority of producers from the current scheduled set confirm each block twice. The first confirmation stage proposes a last irreversible block \(LIB\). The second stage confirms the proposed LIB as final. At this point, the block becomes irreversible. This layer is also used to signal producer schedule changes, if any, at the beginning of every schedule round.
 
 #### 3.1.1. EOSIO Algorithmic Finality
 
@@ -62,7 +62,7 @@ The EOSIO consensus process consists of two parts:
 
 These two processes are independent and can be executed in parallel, except for the very first schedule round after the boot sequence when the blockchain’s first genesis block is created.
 
-## 4. Producer Voting/Scheduling
+## 4. Producer Voting/Scheduling <a id="producer-voting-scheduling"></a>
 
 The voting of the active producers to be included in the next schedule is implemented by the DPoS layer. Strictly speaking, a token holder must first stake some tokens to become a stakeholder and thus be able to vote with a given staking power.
 
@@ -120,7 +120,7 @@ When a block is not produced by a given producer during its assigned time slot, 
 
 ## 5. Block Lifecycle
 
-Blocks are created by the active producer on schedule during its assigned timeslot, then relayed to other producer nodes for syncing and validation. This process continues from producer to producer until a new schedule of producers is approved at a later schedule round. When a valid block meets the consensus requirements \(see [3. EOSIO Consensus](01_consensus_protocol.md#3-eosio-consensus-dpos--abft)\), the block becomes final and is considered irreversible. Therefore, blocks undergo three major phases during their lifespan: production, validation, and finality. Each phase goes through various stages as well.
+Blocks are created by the active producer on schedule during its assigned timeslot, then relayed to other producer nodes for syncing and validation. This process continues from producer to producer until a new schedule of producers is approved at a later schedule round. When a valid block meets the consensus requirements \(see [3. EOSIO Consensus](consensus_protocol.md#3-eosio-consensus-dpos-abft)\), the block becomes final and is considered irreversible. Therefore, blocks undergo three major phases during their lifespan: production, validation, and finality. Each phase goes through various stages as well.
 
 ### 5.1. Block Structure
 
@@ -146,7 +146,7 @@ As an inter-chained sequence of blocks, the fundamental unit within the blockcha
 | `block_num` | `uint32_t` | block number \(sequential counter value since genesis block 0\) |
 | `ref_block_prefix` | `uint32_t` | lower 32 bits of `id`; used to prevent replay attacks |
 
-Some of the block fields are known in advance when the block is created, so they are added during block initialization. Others are computed and added during block finalization, such as the merkle root hashes for transactions and actions, the block number and block ID, the signature of the producer that created and signed the block, etc. \(see [Network Peer Protocol: 3.1. Block ID](03_network_peer_protocol.md#31-block-id)\)
+Some of the block fields are known in advance when the block is created, so they are added during block initialization. Others are computed and added during block finalization, such as the merkle root hashes for transactions and actions, the block number and block ID, the signature of the producer that created and signed the block, etc. \(see [Network Peer Protocol: 3.1. Block ID](network_peer_protocol.md#3-1-block-id)\)
 
 ### 5.2. Block Production
 
@@ -173,7 +173,7 @@ After the transactions have been pushed into the block and the block is finalize
 
 #### 5.2.4. Commit Block
 
-After the block is signed, it is committed to the local chain. This pushes the block to the reversible block database \(see [Network Peer Protocol: 2.2.1. Fork Database](03_network_peer_protocol.md#221-fork-database)\). This makes the block available for syncing with other nodes for validation \(see the [Network Peer Protocol](03_network_peer_protocol.md) for more information about block syncing\).
+After the block is signed, it is committed to the local chain. This pushes the block to the reversible block database \(see [Network Peer Protocol: 2.2.1. Fork Database](network_peer_protocol.md#2-2-1-fork-database)\). This makes the block available for syncing with other nodes for validation \(see the [Network Peer Protocol](network_peer_protocol.md) for more information about block syncing\).
 
 ### 5.3. Block Validation
 
@@ -189,7 +189,7 @@ The first step towards validating a block begins when a block is received by a n
 When the block is received by the chain controller, the software must determine where to add the block within the local chain. The fork database, or Fork DB for short, is used for this purpose. The fork database holds all the branches with reversible blocks that have been received but are not yet finalized. To that end, the following steps are performed:
 
 1. Add block to the fork database.
-2. If block is added to the main branch that contains the current head block, apply block \(see [5.2.1. Apply Block](01_consensus_protocol.md#521-apply-block)\); or
+2. If block is added to the main branch that contains the current head block, apply block \(see [5.2.1. Apply Block](consensus_protocol.md#5-2-1-apply-block)\); or
 3. If block must be added to a different branch, then:
    1. if that branch now becomes the preferred branch compared to the current main branch:  rewind all blocks up to the nearest common ancestor \(and rollback the database state in the process\), re-apply all blocks in the different branch, add the new block and apply it. That branch now becomes the new main branch.
    2. otherwise: add the new block to that branch in the fork database but do nothing else.
@@ -206,7 +206,7 @@ In light validation mode, blocks signed by trusted producers \(which can be conf
 
 ### 5.4. Block Finality
 
-Block finality is the final outcome of EOSIO consensus. It is achieved after a supermajority of active producers have validated the block according to the consensus rules \(see [3.1. Layer 1: Native Consensus \(aBFT\)](01_consensus_protocol.md#31-layer-1-native-consensus-abft)\). Blocks that reach finality are permanently recorded in the blockchain and cannot be undone. In this regard, the last irreversible block \(LIB\) in the chain refers to the most recent block that has become final. Therefore, from that point backwards the transactions that have been recorded on the blockchain cannot be reversed, tampered, or erased.
+Block finality is the final outcome of EOSIO consensus. It is achieved after a supermajority of active producers have validated the block according to the consensus rules \(see [3.1. Layer 1: Native Consensus \(aBFT\)](consensus_protocol.md#3-1-layer-1-native-consensus-abft)\). Blocks that reach finality are permanently recorded in the blockchain and cannot be undone. In this regard, the last irreversible block \(LIB\) in the chain refers to the most recent block that has become final. Therefore, from that point backwards the transactions that have been recorded on the blockchain cannot be reversed, tampered, or erased.
 
 #### 5.4.1. Goal of Finality
 

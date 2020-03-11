@@ -5,6 +5,8 @@ link_text: '1.6: Create Test Accounts'
 
 # Create Test Accounts
 
+## NOTE - You can get accounts and testnet TLOS at the [testnet faucet](https://app.telos.net/testnet/developers), the steps below are only for a local testnet
+
 ## What is an account?
 
 An account is a collection of authorizations, stored on the blockchain, and used to identify a sender/recipient. It has a flexible authorization structure that enables it to be owned either by an individual or group of individuals depending on **how** permissions have been configured. An account is required to send or receive a valid transaction to the blockchain
@@ -13,7 +15,7 @@ This tutorial series uses two "user" accounts, `bob` and `alice`, as well as the
 
 ## Step 1: Create Test Accounts
 
-\[\[caution \| Public Key Persistence\]\] \| In section **1.4 Create Development Wallet**, you created a development key pair and pasted the public key in the **Development Public Key** field for the value to persist throughout the tutorial.
+**Public Key Persistence** In section **1.4 Create Development Wallet**, you created a development key pair and pasted the public key in the **Development Public Key** field for the value to persist throughout the tutorial.
 
 In the following steps, if you see `YOUR_PUBLIC_KEY` instead of the public key value, you can either go back to section **1.4 Create Development Wallet** and persist the value or replace `YOUR_PUBLIC_KEY` with the public key value manually.
 

@@ -5,6 +5,8 @@ link_text: '2.9: Payable actions'
 
 # Payable Actions
 
+### 
+
 ### Goal
 
 This tutorial illustrates how to write a smart contract that has payable actions. Payable actions are actions that require you to transfer some tokens to actions prior to use other functionality of the smart contract. Also, the EOSIO `asset` type is covered in this tutorial.
@@ -36,18 +38,22 @@ Let us now define these constraints as constants:
 * `hodl_symbol`: the symbol of tokens this contract accepts. In this case, we use the "SYS" symbol.
 * `the_party` constant sets the hodl to end on Tuesday, February 22, 2022 10:22:22 PM.
 
-  \`\`\`cpp
-
-  **include &lt;eosiolib/eosio.hpp&gt;**
+```cpp
+#include <eosiolib/eosio.hpp>
 
 using namespace eosio;
 
-class \[\[eosio::contract\("hodl"\)\]\] hodl : public eosio::contract { private: static const uint32\_t the\_party = 1645525342; const symbol hodl\_symbol; public:
+class [[eosio::contract("hodl")]] hodl : public eosio::contract {
+  private:
+    static const uint32_t the_party = 1645525342;
+    const symbol hodl_symbol;
+  public:
 
 }
+```
 
-```text
 Next, let's define a table to track the number of tokens the `hodl` contract has received.
+
 ```cpp
 struct [[eosio::table]] balance
 {
@@ -62,7 +68,7 @@ The `symbol` member of an asset instance will be used as the primary key. By cal
 
 ### Constructor
 
-The constructor initializes the hodl\_symbol as “SYS”, which is a token created in the [Deploy, Issue and Transfer Tokens](02_deploy-issue-and-transfer-tokens.md#step-5-create-the-token) section.
+The constructor initializes the hodl\_symbol as “SYS”, which is a token created in the [Deploy, Issue and Transfer Tokens](https://github.com/EOSIO/welcome/blob/master/docs/02_getting-started/03_smart-contract-development/02_deploy-issue-and-transfer-tokens.md#step-5-create-the-token) section.
 
 ```cpp
 public:
@@ -133,25 +139,31 @@ Then this action checks a few other conditions:
 * The incoming transfer has a valid amount of tokens
 * The incoming transfer uses the token we specify in the constructor
 
-  ```cpp
-  check(now() < the_party, "You're way late");
-  check(quantity.amount > 0, "When pigs fly");
-  check(quantity.symbol == hodl_symbol, "These are not the droids you are looking for.");
-  ```
+```cpp
+check(now() < the_party, "You're way late");
+check(quantity.amount > 0, "When pigs fly");
+check(quantity.symbol == hodl_symbol, "These are not the droids you are looking for.");
+```
 
-  If all constraints are passed, the action updates the balances accordingly:
+If all constraints are passed, the action updates the balances accordingly:
 
-  \`\`\`cpp
+```cpp
+balance_table balance(get_self(), hodler.value);
+auto hodl_it = balance.find(hodl_symbol.raw());
 
-  balance\_table balance\(get\_self\(\), hodler.value\);
+if (hodl_it != balance.end())
+  balance.modify(hodl_it, get_self(), [&](auto &row) {
+    row.funds += quantity;
+  });
+else
+  balance.emplace(get_self(), [&](auto &row) {
+    row.funds = quantity;
+  });
+```
 
-  auto hodl\_it = balance.find\(hodl\_symbol.raw\(\)\);
-
-if \(hodl\_it != balance.end\(\)\) balance.modify\(hodl\_it, get\_self\(\), [&](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/getting-started/03_smart-contract-development/auto%20&row/README.md) { row.funds += quantity; }\); else balance.emplace\(get\_self\(\), [&](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/getting-started/03_smart-contract-development/auto%20&row/README.md) { row.funds = quantity; }\);
-
-```text
 The important thing to note is the deposit function will actually be triggered by the `eosio.token` contract. To understand this behaviour we need to understand the `on_notify` attribute.
-## The on_notify attribute
+
+### The on\_notify attribute
 
 ```cpp
 [[eosio::on_notify("eosio.token::transfer")]]
@@ -173,10 +185,10 @@ The party action will only allow withdrawals after the configured `the_party` ti
 * find the locked balance
 * transfer the token on behalf of the account to the account itself
 
-  ```cpp
-  [[eosio::action]]
-  void party(name hodler)
-  {
+```cpp
+[[eosio::action]]
+void party(name hodler)
+{
   //Check the authority of hodler
   require_auth(hodler);
 
@@ -197,101 +209,99 @@ The party action will only allow withdrawals after the configured `the_party` ti
   }.send();
 
   balance.erase(hodl_it);
-  }
-  ```
+}
+```
 
-  The complete code listing is the following:
+The complete code listing is the following:
 
-  \`\`\`cpp
-
-  **include &lt;eosio/eosio.hpp&gt;**
-
-  **include &lt;eosio/print.hpp&gt;**
-
-  **include &lt;eosio/asset.hpp&gt;**
-
-  **include &lt;eosio/system.hpp&gt;**
+```cpp
+#include <eosio/eosio.hpp>
+#include <eosio/print.hpp>
+#include <eosio/asset.hpp>
+#include <eosio/system.hpp>
 
 using namespace eosio;
 
-class \[\[eosio::contract\("hodl"\)\]\] hodl : public eosio::contract { private: static const uint32\_t the\_party = 1645525342; const symbol hodl\_symbol;
+class [[eosio::contract("hodl")]] hodl : public eosio::contract {
+  private:
+    static const uint32_t the_party = 1645525342;
+    const symbol hodl_symbol;
 
-```text
-struct [[eosio::table]] balance
-{
-  eosio::asset funds;
-  uint64_t primary_key() const { return funds.symbol.raw(); }
+    struct [[eosio::table]] balance
+    {
+      eosio::asset funds;
+      uint64_t primary_key() const { return funds.symbol.raw(); }
+    };
+
+    using balance_table = eosio::multi_index<"balance"_n, balance>;
+
+    uint32_t now() {
+      return current_time_point().sec_since_epoch();
+    }
+
+  public:
+    using contract::contract;
+
+    hodl(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),hodl_symbol("SYS", 4){}
+
+    [[eosio::on_notify("eosio.token::transfer")]]
+    void deposit(name hodler, name to, eosio::asset quantity, std::string memo) {
+      if (hodler == get_self() || to != get_self())
+      {
+        return;
+      }
+
+      check(now() < the_party, "You're way late");
+      check(quantity.amount > 0, "When pigs fly");
+      check(quantity.symbol == hodl_symbol, "These are not the droids you are looking for.");
+
+      balance_table balance(get_self(), hodler.value);
+      auto hodl_it = balance.find(hodl_symbol.raw());
+
+      if (hodl_it != balance.end())
+        balance.modify(hodl_it, get_self(), [&](auto &row) {
+          row.funds += quantity;
+        });
+      else
+        balance.emplace(get_self(), [&](auto &row) {
+          row.funds = quantity;
+        });
+    }
+
+    [[eosio::action]]
+    void party(name hodler)
+    {
+      //Check the authority of hodlder
+      require_auth(hodler);
+
+      // //Check the current time has pass the the party time
+      check(now() > the_party, "Hold your horses");
+
+      balance_table balance(get_self(), hodler.value);
+      auto hodl_it = balance.find(hodl_symbol.raw());
+
+      // //Make sure the holder is in the table
+      check(hodl_it != balance.end(), "You're not allowed to party");
+
+      action{
+        permission_level{get_self(), "active"_n},
+        "eosio.token"_n,
+        "transfer"_n,
+        std::make_tuple(get_self(), hodler, hodl_it->funds, std::string("Party! Your hodl is free."))
+      }.send();
+
+      balance.erase(hodl_it);
+    }
 };
-
-using balance_table = eosio::multi_index<"balance"_n, balance>;
-
-uint32_t now() {
-  return current_time_point().sec_since_epoch();
-}
 ```
 
-public: using contract::contract;
-
-```text
-hodl(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),hodl_symbol("SYS", 4){}
-
-[[eosio::on_notify("eosio.token::transfer")]]
-void deposit(name hodler, name to, eosio::asset quantity, std::string memo) {
-  if (hodler == get_self() || to != get_self())
-  {
-    return;
-  }
-
-  check(now() < the_party, "You're way late");
-  check(quantity.amount > 0, "When pigs fly");
-  check(quantity.symbol == hodl_symbol, "These are not the droids you are looking for.");
-
-  balance_table balance(get_self(), hodler.value);
-  auto hodl_it = balance.find(hodl_symbol.raw());
-
-  if (hodl_it != balance.end())
-    balance.modify(hodl_it, get_self(), [&](auto &row) {
-      row.funds += quantity;
-    });
-  else
-    balance.emplace(get_self(), [&](auto &row) {
-      row.funds = quantity;
-    });
-}
-
-[[eosio::action]]
-void party(name hodler)
-{
-  //Check the authority of hodlder
-  require_auth(hodler);
-
-  // //Check the current time has pass the the party time
-  check(now() > the_party, "Hold your horses");
-
-  balance_table balance(get_self(), hodler.value);
-  auto hodl_it = balance.find(hodl_symbol.raw());
-
-  // //Make sure the holder is in the table
-  check(hodl_it != balance.end(), "You're not allowed to party");
-
-  action{
-    permission_level{get_self(), "active"_n},
-    "eosio.token"_n,
-    "transfer"_n,
-    std::make_tuple(get_self(), hodler, hodl_it->funds, std::string("Party! Your hodl is free."))
-  }.send();
-
-  balance.erase(hodl_it);
-}
-```
-
-};
-
-```text
 Great, let's deploy it.
-## Test deposit
+
+### Test deposit
+
 First, create an account and deploy to it:
-```shell
+
+```text
 cleos create account eosio hodl YOUR_PUBLIC_KEY
 eosio-cpp hodl.cpp -o hodl.wasm
 cleos set contract hodl ./ -p hodl@active
@@ -352,5 +362,5 @@ Party time!
 
 ### What's Next?
 
-* [Elemental Battles](https://battles.eos.io): Build a blockchain game based on EOSIO and continue building your EOSIO knowledge!
+* [Elemental Battles](https://battles.eos.io/): Build a blockchain game based on EOSIO and continue building your EOSIO knowledge!
 

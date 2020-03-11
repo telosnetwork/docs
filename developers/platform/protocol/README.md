@@ -6,10 +6,10 @@
 
 The core protocols are:
 
-1. [Consensus Protocol](01_consensus_protocol.md)
-2. [Transactions Protocol](02_transactions_protocol.md)
-3. [Network or Peer to Peer Protocol](03_network_peer_protocol.md)
-4. [Accounts and Permissions](04_accounts_and_permissions.md)
+1. [Consensus Protocol](consensus_protocol.md)
+2. [Transactions Protocol](transactions_protocol.md)
+3. [Network or Peer to Peer Protocol](network_peer_protocol.md)
+4. [Accounts and Permissions](accounts_and_permissions.md)
 
 ## System
 

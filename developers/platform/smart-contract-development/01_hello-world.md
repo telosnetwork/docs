@@ -112,7 +112,7 @@ class [[eosio::contract]] hello : public contract {
 };
 ```
 
-\[\[info\]\] \| The ABI Generator in eosio.cdt supports several different style of attributes, see the ABI usage guide [here](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/getting-started/03_smart-contract-development/03_understanding-ABI-files.md) You can compile your code to web assembly \(.wasm\) as follows:
+The ABI Generator in eosio.cdt supports several different style of attributes, see the ABI usage guide [here](https://github.com/telosnetwork/docs/tree/6ab1055a149d12ea9ad55d46f0ca92a2ac1b5e98/developers/platform/getting-started/03_smart-contract-development/03_understanding-ABI-files.md) You can compile your code to web assembly \(.wasm\) as follows:
 
 ```text
 eosio-cpp hello.cpp -o hello.wasm
@@ -132,7 +132,7 @@ cleos create account eosio hello YOUR_PUBLIC_KEY -p eosio@active
 
 Deploy the compiled `wasm` to the blockchain with [cleos set contract](https://developers.eos.io/manuals/eos/latest/cleos/command-reference/set/set-contract).
 
-\[\[info \| Get an error?\]\] \| Check if your wallet needs to be unlocked.
+**Get an error?** Check if your wallet needs to be unlocked.
 
 In previous steps you should have created a \`contracts\` directory and obtained the absolute path and then saved it into a cookie. Replace "CONTRACTS\_DIR" in the command below with the absolute path to your \`contracts\` directory.
 

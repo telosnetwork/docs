@@ -9,7 +9,7 @@ Wallets are repositories of public-private key pairs. Private keys are needed to
 
 ## Step 1: Create a Wallet
 
-The first step is to create a wallet. Use [cleos wallet create](05_create-development-wallet.md) to create a new "default" wallet using the option `--to-console` for simplicity. If using cleos in production, it's wise to instead use `--to-file` so your wallet password is not in your bash history. For development purposes and because these are **development and not production keys** `--to-console` poses no security threat.
+The first step is to create a wallet. Use [cleos wallet create](create-development-wallet.md) to create a new "default" wallet using the option `--to-console` for simplicity. If using cleos in production, it's wise to instead use `--to-file` so your wallet password is not in your bash history. For development purposes and because these are **development and not production keys** `--to-console` poses no security threat.
 
 ```text
 cleos wallet create --to-console
@@ -24,7 +24,7 @@ Without password imported keys will not be retrievable.
 "PW5Kewn9L76X8Fpd....................t42S9XCw2"
 ```
 
-\[\[info \| About Wallets\]\] \| A common misconception in cryptocurrency regarding wallets is that they store tokens. However, in reality, a wallet is used to store private keys in an encrypted file to sign transactions. Wallets do not serve as a storage medium for tokens.
+**About Wallets** A common misconception in cryptocurrency regarding wallets is that they store tokens. However, in reality, a wallet is used to store private keys in an encrypted file to sign transactions. Wallets do not serve as a storage medium for tokens.
 
 A user builds a transaction object, usually through an interface, sends that object to the wallet to be signed, the wallet then returns that transaction object with a signature which is then broadcast to the network. When/if the network confirms that the transaction is valid, it is included into a block on the blockchain.
 
@@ -112,9 +112,9 @@ You'll be prompted for a private key, enter the `eosio` development key provided
 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 ```
 
-\[\[warning \| Important\]\] \| Never use the development key for a production account! Doing so will most certainly result in the loss of access to your account, this private key is publicly known. Wonderful, you now have a default wallet unlocked and loaded with a key, and are ready to proceed.
+**Important** Never use the development key for a production account! Doing so will most certainly result in the loss of access to your account, this private key is publicly known. Wonderful, you now have a default wallet unlocked and loaded with a key, and are ready to proceed.
 
 ## What's Next?
 
-* [Start Your Node](06_start-your-node-setup.md): Steps to start `keosd` and `nodeos`.
+* [Start Your Node](start-your-node-setup.md): Steps to start `keosd` and `nodeos`.
 

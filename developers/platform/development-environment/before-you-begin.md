@@ -9,7 +9,7 @@ link_text: '1.2: Before You Begin'
 
 To get started as quickly as possible we recommend using pre-built binaries. Building from source is a more advanced option but will set you back an hour or more and you may encounter build errors.
 
-\[\[info\]\] \| You can find how to build EOSIO from source [here](https://developers.eos.io/manuals/eos/latest/install/build-from-source/).
+You can find how to build EOSIO from source [here](https://developers.eos.io/manuals/eos/latest/install/build-from-source/).
 
 The below commands will download binaries for respective operating systems.
 
@@ -43,7 +43,7 @@ wget https://github.com/EOSIO/eos/releases/download/v2.0.0/eosio-2.0.0-1.el7.x86
 sudo yum install ./eosio-2.0.0-1.el7.x86_64.rpm
 ```
 
-\[\[warning\]\] \| If you have previous versions of eosio installed on your system, please uninstall before proceeding. For detailed instructions, see [here](https://github.com/EOSIO/eos/blob/master/README.md).
+If you have previous versions of eosio installed on your system, please uninstall before proceeding. For detailed instructions, see [here](https://github.com/EOSIO/eos/blob/master/README.md).
 
 ## Step 2: Setup a development directory, stick to it.
 

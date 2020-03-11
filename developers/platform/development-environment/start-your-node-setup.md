@@ -5,6 +5,8 @@ link_text: '1.5: Start keosd and nodeos'
 
 # Start keosd and nodeos
 
+## NOTE - You can skip this step and use the Telos testnet instead of a local testnet
+
 ## Step 1: Boot Node and Wallet
 
 ### Step 1.1: Start keosd
@@ -115,5 +117,5 @@ curl http://localhost:8888/v1/chain/get_info
 
 ## What's Next?
 
-* [Create Test Accounts](07_create-test-accounts.md): Learn how to create test accounts in the EOSIO blockchain along with troubleshooting steps. 
+* [Create Test Accounts](create-test-accounts.md): Learn how to create test accounts in the EOSIO blockchain along with troubleshooting steps. 
 
