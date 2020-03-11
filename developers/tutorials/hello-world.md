@@ -6,7 +6,7 @@ description: Build Your First (Minimal) DApp
 
 Now that we have gotten our testnet account and familiarized ourselves with executing commands from the command line with `cleos`, it is now time for us to build our first Telos smart contract!
 
-1.\) Install the [Contract Development Toolkit](https://github.com/EOSIO/eosio.cdt) \(CDT\) by following [the instructions](https://developers.eos.io/eosio-home/docs/installing-the-contract-development-toolkit). Once installed, you should be able to check the version number from the command line by typing in `eosio-init -version`, which should output the version number of the software
+1.\) Install the [Contract Development Toolkit](https://github.com/EOSIO/eosio.cdt) \(CDT\) by following [the instructions](../platform/development-environment/install-the-contract-dev-toolkit.md). Once installed, you should be able to check the version number from the command line by typing in `eosio-init -version`, which should output the version number of the software
 
 2.\) Create a new folder on your computer that we will name `helloWorld` , then `cd helloWorld` into the folder.
 
@@ -17,8 +17,6 @@ Now that we have gotten our testnet account and familiarized ourselves with exec
 * `ricardian`: this folder is for _Ricardian Contracts_, which are outside of the scope of this tutorial, but are typically used in parallel with smart contracts to help clarify the contract's **intent.** We will ignore this folder for now.
 * `src`: the source C++ files that will dictate the behavior \(actions\) of our smart contract. It also starts off with a `CMakeLists.txt` file which helps to configure the compilation process \(this file can be ignored for now\)
 * `README.txt`: directions on how to build and publish the smart contract
-
-![](https://github.com/telosnetwork/docs/tree/c67489860d0441d57a7df08fc37cded5711b2ff1/developers/.gitbook/assets/image.png)
 
 We are going to look two main files here: `include/helloWorld.hpp` and `src/helloWorld.cpp` . Let's start with the header file:
 

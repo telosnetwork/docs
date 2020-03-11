@@ -4,7 +4,7 @@ description: Interacting with the Network from Your Terminal
 
 # cleos
 
-1.\) The simplest way for us to interact with the Telos blockchain is by using the `cleos` \("command-line EOS"\) software from the [EOS repository](https://github.com/EOSIO/eos). Follow their [installation instructions](https://github.com/EOSIO/eos#mac-os-x).
+1.\) The simplest way for us to interact with the Telos blockchain is by using the `cleos` software from the [EOSIO repository](https://github.com/EOSIO/eos). Follow their [installation instructions](https://github.com/EOSIO/eos#mac-os-x).
 
 2.\) Once installed, you can confirm that `cleos` has been installed correctly by simply typing `cleos --help` from the command line. If `cleos` is properly installed, then you will see helpful information on how to call the program from the terminal.
 
@@ -43,9 +43,9 @@ TLOS balances:
 producers:     <not voted>
 ```
 
-Congrats, the blockchain is showing your account information. Next, we are going to inspect our account's history, which should show some transactions related to our account activation and the TLOS tokens that we received from the testnet faucet.
+Congrats, the blockchain is showing your account information. Next, we are going to inspect our account's history, which should show some transactions related to our account activation and the TLOS tokens that we received from the [testnet faucet](https://app.telos.net/testnet/developers).
 
-First, let's take a moment to understand the "action" and "transaction" terminology utilized by the Telos blockchain, as well as cryptocurrency as a whole. First generation cryptocurrencies like Bitcoin were focused on the storage and transfer of the chain's native tokens \(BTC\), with the blockchain primarily being used as a ledger storing addresses and transaction inputs + outputs. With the rise of Ethereum and other general-purpose blockchains the type of data that can be stored has opened up to store many more types of data including **strings, vectors, maps, enums, timestamps, and custom types**. The types of "transactions" that can be executed on the Telos blockchain is nearly limitless. "**Actions**" refer to the atomic procedures that can be executed through a smart contract on the blockchain, and "**transactions**" refers to a grouping of multiple actions that can be executed atomically \(all completed successfully or none completed at all, no partial execution\).
+First, let's take a moment to understand the "action" and "transaction" terminology utilized by the Telos blockchain, as well as cryptocurrency as a whole. First generation cryptocurrencies like Bitcoin were focused on the storage and transfer of the chain's native tokens \(BTC\), with the blockchain primarily being used as a ledger storing addresses and transaction inputs + outputs. With the rise of Ethereum and other general-purpose blockchains the type of data that can be stored has opened up to store many more types of data including **strings, vectors, maps, enums, timestamps, and custom types**. The types of "transactions" that can be executed on the Telos blockchain is nearly limitless. "[**Actions**](../platform/protocol/transactions_protocol.md#1-1-actions)" refer to the atomic procedures that can be executed through a smart contract on the blockchain, and "[**transactions**](../platform/protocol/transactions_protocol.md#2-transaction-instance)" refers to a grouping of multiple actions that can be executed atomically \(all completed successfully or none completed at all, no partial execution\).
 
 As an example, the account creation transaction consists of three different actions:
 

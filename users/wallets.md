@@ -21,7 +21,7 @@ Currently, some of the more commonly used wallets are the following \(_**note th
 
 ## Command-Line
 
-* [CLEOS](https://developers.eos.io/manuals/eos/latest/cleos/index): developed by [Block.One](https://developers.eos.io/manuals/eos/latest/cleos/index)
+* [CLEOS](../developers/tutorials/cleos.md): developed by [Block.One](https://block.one)
 
 Creating a Telos account typically requires a small deposit of another cryptocurrency, and should be finalized shortly after payment. From this point forward your account name can be used as your receiving address, and will be used to identify you on the blockchain.
 
