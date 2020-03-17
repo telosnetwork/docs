@@ -127,12 +127,12 @@ Authorization over a given action is determined by satisfying all explicit autho
 
 The authority table for `alice`'s `publish` named permission is shown below. According to its contents, in order to authorize an action under that permission, a threshold of two must be reached. Since both `bob@active` and `stacy@active` factors have a weight of two, either one can satisfy the action authorization. This means that either `bob` or `stacy` with a permission level of `active` or higher can independently execute any action under `alice`'s `publish` permission.
 
-|  Permission |  Account / Public Key |  Weight |  Threshold |
+| Permission | Account / Public Key | Weight | Threshold |
 | :--- | :--- | :--- | :--- |
-|  publish |  bob@active |  2 |  2 |
-|  stacy@active |  2 |  |  |
-|  EOS7Hnv4iBfcw2... |  1 |  |  |
-|  EOS3Wo1p9er7fh... |  1 |  |  |
+| publish | bob@active | 2 | 2 |
+| stacy@active | 2 |  |  |
+| EOS7Hnv4iBfcw2... | 1 |  |  |
+| EOS3Wo1p9er7fh... | 1 |  |  |
 
 Alternatively, it would require two acounts with public keys `EOS7Hnv4iBfcw2...` and `EOS3Wo1p9er7fh...` to satisfy the action authorization. This is because each public key has a weight of 1 in the authority table.
 

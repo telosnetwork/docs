@@ -1,7 +1,5 @@
 # Install the Contract Dev Toolkit
 
-
-
 The EOSIO Contract Development Toolkit, CDT for short, is a collection of tools related to contract compilation. Subsequent tutorials use the CDT primarily for compiling contracts and generating ABIs.
 
 Starting from 1.3.x, CDT supports Mac OS X brew, Linux Debian and RPM packages. The easiest option to install would be using one of these package systems. Pick one installation method only. \[\[warning\]\] \| If you have versions of eosio.cdt prior to 1.3.0 installed on your system, please uninstall before proceeding

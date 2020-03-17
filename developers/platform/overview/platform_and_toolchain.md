@@ -13,7 +13,7 @@ The EOSIO platform is made up of the following components and toolchain:
 
 The basic relationship between these components is illustrated in the following diagram:
 
-![EOSIO Development Lifecycle](../../../.gitbook/assets/eosio-overview-dev.svg)
+![EOSIO Development Lifecycle](https://github.com/telosnetwork/docs/tree/2372dba84a740b5126403a82ece326adacce62df/.gitbook/assets/eosio-overview-dev.svg)
 
 \[\[info \| Note\]\] \| EOSIO also provides a frontend library for javascript development called EOSJS along with Swift and Java SDKs for native mobile applications development.
 
@@ -21,13 +21,13 @@ The basic relationship between these components is illustrated in the following 
 
 Nodeos is the core EOSIO node daemon. Nodeos handles the blockchain data persistence layer, peer-to-peer networking, and contract code scheduling. For development environments, nodeos enables you to set up a single node blockchain network. Nodeos offers a wide range of features through plugins which can be enabled or disabled at start time via the command line parameters or configuration files.
 
-You can read detailed documentation about `nodeos` [here](https://developers.eos.io/manuals/eos/latest/nodeos/index). 
+You can read detailed documentation about `nodeos` [here](https://developers.eos.io/manuals/eos/latest/nodeos/index).
 
 ## Cleos
 
 `cleos` is a command line tool that interfaces with the REST APIs exposed by `nodeos`. You can also use `cleos` to deploy and test EOSIO smart contracts.
 
-You can read detailed documentation about `cleos` [here](https://developers.eos.io/manuals/eos/latest/cleos/index). 
+You can read detailed documentation about `cleos` [here](https://developers.eos.io/manuals/eos/latest/cleos/index).
 
 ## Keosd
 
@@ -35,7 +35,7 @@ You can read detailed documentation about `cleos` [here](https://developers.eos.
 
 \[\[info \| Note\]\] \| `keosd` can be accessed using the wallet API, but it is important to note that the intended usage is for local light client applications. `keosd` is not for cross network access by web applications trying to access users' wallets.
 
-You can read detailed documentation about `keosd` [here](https://developers.eos.io/manuals/eos/latest/keosd/index). 
+You can read detailed documentation about `keosd` [here](https://developers.eos.io/manuals/eos/latest/keosd/index).
 
 ## EOSIO.CDT
 

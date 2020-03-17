@@ -50,7 +50,7 @@ The ABI now looks like this:
    "types": [{
      "new_type_name": "name",
      "type": "name"
-	 }],
+     }],
    "structs": [],
    "actions": [],
    "tables": [],
@@ -68,8 +68,8 @@ A struct's object definition in JSON looks like the following:
 ```javascript
 {
    "name": "issue", //The name
-   "base": "", 			//Inheritance, parent struct
-   "fields": []			//Array of field objects describing the struct's fields.
+   "base": "",             //Inheritance, parent struct
+   "fields": []            //Array of field objects describing the struct's fields.
 }
 ```
 
@@ -79,7 +79,7 @@ A struct's object definition in JSON looks like the following:
 {
    "name":"", // The field's name
    "type":""   // The field's type
-}    
+}
 ```
 
 In the `eosio.token` contract, there's a number of structs that require definition. Please note, not all of the structs are explicitly defined, some correspond to an actions' parameters. Here's a list of structs that require an ABI description for the `eosio.token` contract:
@@ -220,9 +220,9 @@ An action's JSON object definition looks like the following:
 
 ```javascript
 {
-  "name": "transfer", 			//The name of the action as defined in the contract
-  "type": "transfer", 			//The name of the implicit struct as described in the ABI
-  "ricardian_contract": "" 	//An optional ricardian clause to associate to this action describing its intended functionality.
+  "name": "transfer",             //The name of the action as defined in the contract
+  "type": "transfer",             //The name of the implicit struct as described in the ABI
+  "ricardian_contract": ""     //An optional ricardian clause to associate to this action describing its intended functionality.
 }
 ```
 
@@ -289,7 +289,7 @@ Describe the tables. Here's a table's JSON object definition:
 ```javascript
 {
   "name": "",       //The name of the table, determined during instantiation.
-  "type": "", 			//The table's corresponding struct
+  "type": "",             //The table's corresponding struct
   "index_type": "", //The type of primary index of this table
   "key_names" : [], //An array of key names, length must equal length of key_types member
   "key_types" : []  //An array of key types that correspond to key names array member, length of array must equal length of key names array.

@@ -5,15 +5,13 @@ link_text: '2.9: Payable actions'
 
 # Payable Actions
 
-### 
-
-### Goal
+## Goal
 
 This tutorial illustrates how to write a smart contract that has payable actions. Payable actions are actions that require you to transfer some tokens to actions prior to use other functionality of the smart contract. Also, the EOSIO `asset` type is covered in this tutorial.
 
 As for the logic of this smart contract, we're going to write a contract that accepts a particular token but will not allow the tokens to be withdrawn for a specific amount of time.
 
-### The token to HODL
+## The token to HODL
 
 First create a standard C++ class called "hodl" that extends `eosio::contract`.
 
@@ -66,7 +64,7 @@ In this multiple index table declaration, a new type called `asset` is used. An 
 
 The `symbol` member of an asset instance will be used as the primary key. By calling the `raw()` function the `symbol` variable will be converted into an unsigned integer so it can be used as a primary key.
 
-### Constructor
+## Constructor
 
 The constructor initializes the hodl\_symbol as “SYS”, which is a token created in the [Deploy, Issue and Transfer Tokens](https://github.com/EOSIO/welcome/blob/master/docs/02_getting-started/03_smart-contract-development/02_deploy-issue-and-transfer-tokens.md#step-5-create-the-token) section.
 
@@ -76,7 +74,7 @@ public:
   hodl(name receiver, name code, datastream<const char *> ds):contract(receiver, code, ds), hodl_symbol("SYS", 4){}
 ```
 
-### Get current UTC time
+## Get current UTC time
 
 In order to get time in UTC timezone throughout the code, create a function to easily access the current UTC time.
 
@@ -88,7 +86,7 @@ uint32_t now() {
 
 Next, we'll write the actions of the contract.
 
-### Deposit
+## Deposit
 
 To accept a transfer we need to have a deposit action.
 
@@ -163,7 +161,7 @@ else
 
 The important thing to note is the deposit function will actually be triggered by the `eosio.token` contract. To understand this behaviour we need to understand the `on_notify` attribute.
 
-### The on\_notify attribute
+## The on\_notify attribute
 
 ```cpp
 [[eosio::on_notify("eosio.token::transfer")]]
@@ -177,7 +175,7 @@ In this case, the `on_notify` attribute ensures the incoming notification is for
 
 This is also why we don't need to check if the hodler actually has the appropriate amount of tokens he or she claimed, as the `eosio.token` contract would have done this check prior to the transfer notification reaching the `hodl` `deposit` action.
 
-### Party!
+## Party!
 
 The party action will only allow withdrawals after the configured `the_party` time has elapsed. The party action has a similar construct as the deposit action with the following conditions:
 
@@ -297,7 +295,7 @@ class [[eosio::contract("hodl")]] hodl : public eosio::contract {
 
 Great, let's deploy it.
 
-### Test deposit
+## Test deposit
 
 First, create an account and deploy to it:
 
@@ -331,7 +329,7 @@ Finally, transfer some SYS tokens to the `hodl` contract from `han`'s account.
 cleos transfer han hodl '0.0001 SYS' 'Hodl!' -p han@active
 ```
 
-### Test withdraw
+## Test withdraw
 
 To test the withdrawal feature, the `the_party` variable needs to be updated. Update the `the_party` variable to a point in time in the past so the withdrawal functionality can be tested.
 
@@ -360,7 +358,7 @@ executed transaction: 62b1e6848c8c5e6458b9a0f7600e65574eaf60445be114d224adccc5a9
 
 Party time!
 
-### What's Next?
+## What's Next?
 
 * [Elemental Battles](https://battles.eos.io/): Build a blockchain game based on EOSIO and continue building your EOSIO knowledge!
 

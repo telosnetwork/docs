@@ -14,13 +14,13 @@ Wallets are clients that store keys that may or may not be associated with the p
 
 Permissions are arbitrary names used to define the requirements for a transaction sent on behalf of that permission. Permissions can be assigned for authority over specific contract actions by _linking authorization_ or linkauth.
 
-For more information about these concepts, see the _Accounts and Permissions_ documentation. 
+For more information about these concepts, see the _Accounts and Permissions_ documentation.
 
 ### Smart Contracts
 
 A smart contract is a piece of code that can execute on a blockchain and keep the state of contract execution as a part of the immutable history of that blockchain instance. Therefore, developers can rely on that blockchain as a trusted computation environment in which inputs, execution, and the results of a smart contract are independent and free of external influence.
 
-{% embed url="https://www.youtube.com/watch?v=\_I0dUL4kpTg" %}
+{% embed url="https://www.youtube.com/watch?v=\_I0dUL4kpTg" caption="" %}
 
 ### Delegated Proof of Stake \(DPOS\)
 

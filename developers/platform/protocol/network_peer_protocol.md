@@ -219,7 +219,7 @@ In either case 1 or 2 above, the syncing process in the node involves locating t
 
 After the common ancestor is found, a sync request message is sent to retrieve the blocks needed by the node, starting from the next block after the nearest common ancestor and ending in the peer’s head block.
 
-To make effective use of bandwidth, the required blocks are obtained from various peers, rather than just one, if necessary. Depending on the number of blocks needed, the blocks are requested in chunks by specifying the start block number and the end block number to download from a given peer. The node uses the list of block states to keep track of which blocks each peer has, so this information is used to determine which connected peers to request block chunks from. 
+To make effective use of bandwidth, the required blocks are obtained from various peers, rather than just one, if necessary. Depending on the number of blocks needed, the blocks are requested in chunks by specifying the start block number and the end block number to download from a given peer. The node uses the list of block states to keep track of which blocks each peer has, so this information is used to determine which connected peers to request block chunks from.
 
 When both LIB and head blocks are caught up with respect to the peer, the operation mode in the Sync Manager is switched from catch-up to in-sync.
 
