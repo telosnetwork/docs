@@ -12,7 +12,7 @@ Telos Decide is an on-chain governance engine exclusively for the Telos Blockcha
 
 #### Secure Ballot Hosting 🔐
 
-Any user on the Telos Blockchain Network may create and publish a public ballot that is secured and hosted through Telos Decide. During ballot creation, the ballot publisher selects a specific token to use for counting votes. The default is the standard `VOTE` token - usable in all Telos Core Governance ballots, but Telos Decide offers additional services for creating privately managed tokens that ballots can use for counting votes instead.
+Any user on the Telos Blockchain Network may create and publish a public ballot hosted through Telos Decide. During ballot creation, the ballot publisher selects a token to use for counting votes. The default is the standard `VOTE` token - usable in all Telos Core Governance ballots, but Telos Decide offers additional services for creating tokens that can be selected instead.
 
 #### Advanced Voting Methods 🗳
 
@@ -20,11 +20,11 @@ The Telos Decide Governance Engine boasts an extensive set of voting methods tha
 
 #### Custom Token Treasuries 💎
 
-Any user on the Telos Blockchain Network may create a custom token treasury that automatically inherits Telos Decide's entire suite of voting services. These treasuries govern the minting and distribution of tokens and can also be customized to allow or disallow specific token behaviors like transferring, burning, staking, or reclaiming. Once a treasury has been created, any voter with a balance of its tokens may publish public ballots accessible to all other holders of that same token.
+Any user on the Telos Blockchain Network may create a custom token treasury that automatically inherits Telos Decide's entire suite of voting services. These treasuries govern the minting and distribution of tokens and can also be customized to allow or disallow specific token behaviors like `transferring`, `burning`, `staking`, or `reclaiming`. Once a treasury has been created, any voter with a balance of its tokens may publish public ballots accessible to all other holders of that same token.
 
 #### Committee Management Tools 👥
 
-Telos Decide offers a suite of committee creation and management actions that are available to any active token treasury and its voters. Developers can also hook their external smart contracts into Telos Decide's committee tools to enable complete on-chain management of committees and their members.
+Telos Decide offers a suite of committee creation and management actions that are available to any active token treasury and its voters. Developers can also hook their external smart contracts into Telos Decide's committee tools to enable complete on-chain committee management.
 
 #### Traceable Vote Integrity ✅
 
@@ -83,17 +83,17 @@ Further information about each service can be found in the relevant documentatio
 
 ### Roadmap
 
-#### Q1 2020
+#### Q2 2020
 
 * Additional Worker Services
 * Additional Voting Methods
 
-#### Q2 2020
+#### Q3 2020
 
 * Delegates, Delegate Voting
 * External Token Registration
 
-#### Q3 2020
+#### Q4 2020
 
 * Platform Optimization
 

@@ -24,6 +24,7 @@
     * [Contract Integration](developers/features/telos-decide/contract-integration.md)
   * [Telos Works](developers/features/telos-works/README.md)
     * [Submit A Proposal](developers/features/telos-works/submit-a-proposal.md)
+    * [Cancel A Proposal](developers/features/telos-works/cancel-a-proposal.md)
 * [Platform](developers/platform/README.md)
   * [Development Environment](developers/platform/development-environment/README.md)
     * [Try Telos](developers/platform/development-environment/try-telos.md)
