@@ -1,9 +1,5 @@
 # Ballots
 
-## What is a Ballot?
-
-A Ballot tracks votes for selections.
-
 ## Ballot Creation
 
 To create a new ballot, call the `newballot()` action. Note that the account publishing the ballot must also be a member of the group they wish to publish the ballot under.
@@ -26,9 +22,9 @@ Voting Methods describe how a ballot will react to voters with different token b
 
 | Voting Method | Description | Raw Token Weight | Transformed Weight Per Selection |
 | :--- | :--- | :--- | :--- |
-| 1acct1vote | Every voter gets 1 whole vote. Zero balances don't count. | 0.01 TEST | 1.00 TEST Each |
-| 1tokennvote | Raw weight is applied to each option selected. | 3.00 TEST | 3.00 TEST Each |
-| 1token1vote | Raw weight is split among all selections. | 3.00 TEST | 1.00 TEST Each |
+| 1acct1vote | Every voter gets 1 whole token vote, regardless of account balance. Zero balances don't count. | 0.01 TEST | 1.00 TEST Each |
+| 1tokennvote | Raw token weight is applied to each option selected. | 3.00 TEST | 3.00 TEST Each |
+| 1token1vote | Raw token weight is split among all selections. | 3.00 TEST | 1.00 TEST Each |
 | 1tsquare1v | Raw weight is split among selections and each weight squared. At ballot closure each option's total will be square-rooted | 3.00 TEST | 9.00 TEST Each |
 | quadratic | Raw weight is square-rooted and split among selections. | 3.00 TEST | 9.00 Each |
 
@@ -40,7 +36,8 @@ Ballots have a range of settings that further alter their behavior.
 | :--- | :--- | :--- |
 | lightballot | Marks as a light ballot. | false |
 | revotable | Allows revoting on the ballot. | true |
-| votestake | Reads voter's staked balance for casting votes. | true |
+| voteliquid | Considers voter's liquid balance into vote weight. | false |
+| votestake | Considers voter's staked balance into vote weight. | true |
 
 ## Table Breakdown
 
