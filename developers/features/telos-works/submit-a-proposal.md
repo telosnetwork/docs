@@ -2,7 +2,7 @@
 description: Follow the guide below to draft and run a Telos Works Proposal
 ---
 
-# Submit A Proposal
+# Submit a Proposal
 
 ## Categories
 

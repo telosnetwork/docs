@@ -1,2 +1,2 @@
-# Cancel A Proposal
+# Cancel a Proposal
 
