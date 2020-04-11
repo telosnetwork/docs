@@ -27,6 +27,7 @@
     * [Cancel a Proposal](developers/features/telos-works/cancel-a-proposal.md)
   * [Telos Amend](developers/features/telos-amend/README.md)
     * [Create a Document](developers/features/telos-amend/create-a-document.md)
+    * [Manage Sections](developers/features/telos-amend/manage-sections.md)
     * [Propose an Amendment](developers/features/telos-amend/propose-an-amendment.md)
     * [Delete a Document](developers/features/telos-amend/delete-a-document.md)
 * [Platform](developers/platform/README.md)
