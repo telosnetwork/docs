@@ -1,4 +1,22 @@
-# Features
+# Services
 
-Telos has many unique features such as Telos Decide and Telos Works. Coming soon is documentation on may more features such as Request, Login, Amend and Profile.
+### Telos Decide
+
+A Governance Engine exclusively for the Telos Blockchain Network that offers voting services, DAC/DAO management, token creation, and more.
+
+{% page-ref page="telos-decide/" %}
+
+### Telos Works
+
+A service for funding community projects through decentralized voting. Any Telos holder can make a proposal that requests TLOS from a community pool for jumpstarting their ideas and projects.
+
+{% page-ref page="telos-works/" %}
+
+### Telos Amend
+
+A Decentralized Document Amendment service for the Telos Blockchain Network. It allows any Telos holder to create text documents and allow a group of decentralized voters to propose amendments to those documents.
+
+{% page-ref page="telos-amend/" %}
+
+
 

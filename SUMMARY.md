@@ -6,7 +6,7 @@
 ## Users
 
 * [Wallets & Accounts](users/wallets.md)
-* [Getting Some TLOS](users/getting-some-tlos.md)
+* [Getting TLOS](users/getting-some-tlos.md)
 
 ## Developers
 
@@ -14,7 +14,7 @@
   * [cleos](developers/tutorials/cleos.md)
   * [eosjs](developers/tutorials/eosjs.md)
   * [Hello World Contract](developers/tutorials/hello-world.md)
-* [Features](developers/features/README.md)
+* [Services](developers/features/README.md)
   * [Telos Decide](developers/features/telos-decide/README.md)
     * [Ballots](developers/features/telos-decide/ballots.md)
     * [Payrolls](developers/features/telos-decide/payrolls.md)

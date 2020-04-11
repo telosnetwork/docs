@@ -2,7 +2,7 @@
 description: How to acquire TLOS tokens
 ---
 
-# Getting Some TLOS
+# Getting TLOS
 
 Currently, the easiest ways of obtaining TLOS tokens are the following:
 
