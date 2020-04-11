@@ -18,5 +18,11 @@ A Decentralized Document Amendment service for the Telos Blockchain Network. It 
 
 {% page-ref page="telos-amend/" %}
 
+### Telos Login
+
+A decentralized login and session service for the Telos Blockchain Network. It allows users to create, refresh, and delete login sessions that dapps can tap into for user authentication.
+
+{% page-ref page="telos-login/" %}
+
 
 
