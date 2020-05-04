@@ -24,5 +24,15 @@ A decentralized login and session service for the Telos Blockchain Network. It a
 
 {% page-ref page="telos-login/" %}
 
+## Telos Shop
 
+Telos Shop is a decentralized storefront service for the Telos Blockchain Network.
+
+{% page-ref page="telos-shop/" %}
+
+## Telos Rewards
+
+Telos Rewards is a staking rewards service for the Telos Blockchain Network.
+
+{% page-ref page="telos-rewards/" %}
 
