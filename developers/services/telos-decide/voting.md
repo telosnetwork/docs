@@ -76,11 +76,7 @@ Sometimes voters want to retract previously submitted votes. Note that unvoting 
 
 Certain treasuries will allow or disallow staking of tokens. If staking is allowed, vote weights will be pulled from the voter's staked amount instead of liquid when casting votes.
 
-## Table Breakdown
-
-Voters are the lifeblood of Telos Decide, so it's important that voters remain knowledgable about how the platform works and how to interpret their own voter tables.
-
-Table: `voters`
+## Voters Table
 
 Scope: `your-voter-name`
 
@@ -92,4 +88,18 @@ Scope: `your-voter-name`
 | delegated | asset | Tokens delegated to a registered delegate. |
 | delegated\_to | name | The delegate account to which the voter's tokens are delegated. |
 | delegation\_time | time\_point\_sec | Time point the last delegation or undelegation occurred. |
+
+## Votes Table
+
+Scope: `ballot-name`
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| voter | name | Account name of the voter. |
+| is\_delegate | bool | True if the voter account is a delegate. |
+| raw\_votes | asset | Amount of raw tokens cast for this vote. |
+| weighted\_votes | map&lt;name, asset&gt; | Map of ballot option -&gt; total votes. |
+| vote\_time | time\_point\_sec | Time point of vote. |
+
+
 

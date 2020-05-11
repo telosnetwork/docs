@@ -14,7 +14,7 @@ A service for funding community projects through decentralized voting. Any Telos
 
 ## Telos Amend
 
-A Decentralized Document Amendment service for the Telos Blockchain Network. It allows any Telos holder to create text documents and allow a group of decentralized voters to propose amendments to those documents.
+A decentralized document amendment service for the Telos Blockchain Network. It allows any Telos holder to create text documents and allow a group of decentralized voters to propose amendments to those documents.
 
 {% page-ref page="telos-amend/" %}
 
@@ -26,13 +26,13 @@ A decentralized login and session service for the Telos Blockchain Network. It a
 
 ## Telos Shop
 
-Telos Shop is a decentralized storefront service for the Telos Blockchain Network.
+A decentralized storefront service for the Telos Blockchain Network.
 
 {% page-ref page="telos-shop/" %}
 
 ## Telos Rewards
 
-Telos Rewards is a staking rewards service for the Telos Blockchain Network.
+A staking rewards service for the Telos Blockchain Network.
 
 {% page-ref page="telos-rewards/" %}
 
