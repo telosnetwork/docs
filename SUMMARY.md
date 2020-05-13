@@ -33,6 +33,7 @@
   * [Telos Login](developers/services/telos-login/README.md)
     * [Login](developers/services/telos-login/login.md)
     * [Logout](developers/services/telos-login/logout.md)
+  * [Telos Swap](developers/services/telos-swap.md)
   * [Telos Shops](developers/services/telos-shops/README.md)
     * [Create Shop](developers/services/telos-shops/create-shop.md)
     * [Manage Inventory](developers/services/telos-shops/manage-inventory.md)

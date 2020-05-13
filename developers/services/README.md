@@ -24,6 +24,14 @@ A decentralized login and session service for the Telos Blockchain Network. It a
 
 {% page-ref page="telos-login/" %}
 
+## Telos Swap
+
+A bancor swap service for the Telos Blockchain Network.
+
+{% page-ref page="telos-swap.md" %}
+
+
+
 ## Telos Shops
 
 A decentralized storefront service for the Telos Blockchain Network.
