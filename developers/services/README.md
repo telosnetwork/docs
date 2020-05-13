@@ -24,11 +24,11 @@ A decentralized login and session service for the Telos Blockchain Network. It a
 
 {% page-ref page="telos-login/" %}
 
-## Telos Shop
+## Telos Shops
 
 A decentralized storefront service for the Telos Blockchain Network.
 
-{% page-ref page="telos-shop/" %}
+{% page-ref page="telos-shops/" %}
 
 ## Telos Rewards
 
