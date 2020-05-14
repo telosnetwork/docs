@@ -37,7 +37,42 @@ cleos push action amend.decide newdocument '{ ... }' -p author
 
 {% tab title="eosjs" %}
 ```
-
+(async () => {
+  const result = await api.transact({
+    actions: [{
+      account: 'amend.decide',
+      name: 'newdocument',
+      authorization: [{
+        actor: '...',
+        permission: 'active',
+      }],
+      data: {
+        title: 'Doc1',
+        subtitle: 'A small example document',
+        document_name: 'doc1',
+        author: 'testaccount1',
+        initial_sections: [
+          {
+            "key": "sectiona",
+            "value": "Text here"
+          },
+          {
+            "key": "sectionb",
+            "value": "More text here"
+          },
+          {
+            "key": "sectionc",
+            "value": "A little more text"
+          }
+        ]
+      },
+    }]
+  }, {
+    blocksBehind: 3,
+    expireSeconds: 30,
+  });
+  console.dir(result);
+})();
 ```
 {% endtab %}
 {% endtabs %}
@@ -63,7 +98,27 @@ cleos push action amend.decide editheader '{ ... }' -p author
 
 {% tab title="eosjs" %}
 ```
-
+(async () => {
+  const result = await api.transact({
+    actions: [{
+      account: 'amend.decide',
+      name: 'editheader',
+      authorization: [{
+        actor: '...',
+        permission: 'active',
+      }],
+      data: {
+        document_name: 'doc1',
+        new_title: 'New Title',
+        new_subtitle: 'New Subtitle'
+      },
+    }]
+  }, {
+    blocksBehind: 3,
+    expireSeconds: 30,
+  });
+  console.dir(result);
+})();
 ```
 {% endtab %}
 {% endtabs %}
@@ -79,9 +134,38 @@ A document author may relinquish authorship to another account with the `updatea
 | document\_name | name | doc1 | The name of the document to change the author for. |
 | new\_author | name | newauthor1 | The name of the Telos account of the new author. |
 
+{% tabs %}
+{% tab title="Cleos" %}
 ```text
 cleos push action amend.decide updateauthor '{ ... }' -p author
 ```
+{% endtab %}
+
+{% tab title="eosjs" %}
+```
+(async () => {
+  const result = await api.transact({
+    actions: [{
+      account: 'amend.decide',
+      name: 'updateauthor',
+      authorization: [{
+        actor: '...',
+        permission: 'active',
+      }],
+      data: {
+        document_name: 'doc1',
+        new_author: 'newauthor1'
+      },
+    }]
+  }, {
+    blocksBehind: 3,
+    expireSeconds: 30,
+  });
+  console.dir(result);
+})();
+```
+{% endtab %}
+{% endtabs %}
 
 ## 
 
