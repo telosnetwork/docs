@@ -2,7 +2,19 @@
 
 ## Create a new Document
 
-Documents are broken down into named sections which hold the contents of the document. Sections can be raw text, IPFS links, API links, or any combination thereof. To begin, the document author must call the `newdocument` action on the `amend.decide` contract.
+Documents are broken down into named sections which hold the contents of the document. Sections can be raw text, IPFS links, API links, or any combination thereof. A document can be roughly visualized like the example below:
+
+#### Document Title
+
+Document Subtitle
+
+| section\_name | content |
+| :--- | :--- |
+| sectiona | Text here |
+| sectionb | More text here |
+| sectionc | A little more text |
+
+To begin, the document author must call the `newdocument` action on the `amend.decide` contract.
 
 ### ACTION `newdocument`
 
