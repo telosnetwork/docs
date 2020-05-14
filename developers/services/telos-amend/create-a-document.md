@@ -2,7 +2,7 @@
 
 ## Create a new Document
 
-Documents are broken down into named sections which hold the contents of the document. Sections can be raw text, IPFS links, API links, or any combination thereof. A document can be roughly visualized like the example below:
+Documents are broken down into named sections which hold the contents of the document. Sections can be raw text, IPFS links, API links, or any combination thereof. A document can be roughly visualized with the layout below:
 
 #### Document Title
 
