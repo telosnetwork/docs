@@ -2,7 +2,7 @@
 description: A Sustainably Decentralized Blockchain Network
 ---
 
-# Welcome to Telos
+# Welcome to Telos®
 
 ### Background
 
@@ -10,7 +10,7 @@ A few years after the launch of Bitcoin some of its core developers voiced their
 
 While the boom saw Ethereum's price skyrocket, the increased usage of the network shined a spotlight on the network's inability to properly scale with increased usage. Foreseeing the potential for scaling issues, Dan Larimer, a developer with previous experience launching blockchain projects \([Bitshares](https://bitshares.org/) and [Steem](https://steem.com/)\), wrote a [white paper](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md) in early-2017 describing a decentralized virtual machine focused on scalability and based on a new consensus mechanism, [Delegated Proof of Stake](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper) \(DPOS\).
 
-After a year-long ICO that raised 4 billion dollars on the Ethereum blockchain with the ERC-20 EOS Token, Block.One released the EOSIO software to the public on June 1, 2018. A little over a month later, Telos was started by a group of EOSIO software enthusiasts, block producers \(also known as miners\) and developers who had a vision of what they could do with the software. This vision was about making the most out of the Delegated Proof of Stake \(DPOS\) mechanism and building a governed public blockchain that could operate effectively beyond the traditional “code is law” mindset.
+After a year-long ICO that raised 4 billion dollars on the Ethereum blockchain with the ERC-20 EOS Token, Block.One released the EOSIO software to the public on June 1, 2018. A little over a month later, Telos® was started by a group of EOSIO software enthusiasts, block producers \(also known as validators or miners\) and developers who had a vision of what they could do with the software. This vision was about making the most out of the Delegated Proof of Stake \(DPOS\) mechanism and building a governed public blockchain that could operate effectively beyond the traditional “code is law” mindset.
 
 This group quickly grew to more than 120 people from around the world, from teams based in Africa, Asia, Europe, North and South America. This decentralized community became known collectively as the Telos Launch Group \(TLG\). This group self-organized into multiple work groups with various focuses and agendas including coding, development, security, hardware, outreach for exchange listing, public relations, and marketing.
 
@@ -41,5 +41,5 @@ The list of characteristics that define the Telos blockchain changes over time a
 * **Prohibition of Voting by Exchanges**: the custodial nature of online exchanges gives them the ability to stake and vote with users' funds, thereby given themselves untoward influence over the network. On Telos exchanges are prohibited from voting with users' funds, giving them less influence.
 * **Block Producer Accountability:** standby Block Producers are periodically cycled into active block production, giving them a chance to prove that their infrastructure is working correctly. Standby Block Producers who fail this test will be penalized, preventing bad actors from launching poor-performing Block Producer nodes.
 
-_Note: considerable content above is used with permission from telosnetwork.io/about_
+_Note: considerable content above is used with permission from telosnetwork.io/about_ Telos® in respect to any blockchain usage is a registered trademark. All rights reserved. 
 
