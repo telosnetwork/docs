@@ -6,7 +6,7 @@ A worker is an account that watches for jobs and completes them in return for pa
 
 ## What Jobs are Available?
 
-As of Telos Decide v2.0.0 there are two kinds of jobs: **rebalances** and **cleanups**. Additional job types will become available as new features are added to Telos Decide.
+As of Telos Decide™ v2.0.0 there are two kinds of jobs: **rebalances** and **cleanups**. Additional job types will become available as new features are added to Telos Decide.
 
 `Rebalance` jobs become available when voters cast votes on a ballot and then change their vote weight. This action prompts workers to recalculate that voter's weighted votes based on their new balance, and the worker is paid for performing this recalculation. Since a voter can participate on any number of different ballots, rebalance jobs become available on _every active vote by that voter_ after a balance change.
 
