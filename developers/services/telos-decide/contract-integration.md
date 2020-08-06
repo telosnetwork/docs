@@ -1,12 +1,12 @@
 ---
-description: Follow along for an example contract built with Telos Decide Integration
+description: Follow along for an example contract built with Telos Decide™ Integration
 ---
 
 # Contract Integration
 
 ## Building An External Contract
 
-For this Example Guide we will walk through building a simple external contract to act on Telos Decide ballot results after ballot closure. Developers can use this example as a starting point for designing their own contracts.
+For this Example Guide we will walk through building a simple external contract to act on Telos Decide™ ballot results after ballot closure. Developers can use this example as a starting point for designing their own contracts.
 
 In our contract, we will launch a new election ballot and then **contractually** act on the results received by Telos Decide's `broadcast()` action. Upon hearing the broadcast, our contract will read the final results, determine the winning candidate, and then send an inline action back to Telos Decide to update a committee with the election winner.
 
