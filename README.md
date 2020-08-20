@@ -2,7 +2,7 @@
 description: A Sustainably Decentralized Blockchain Network
 ---
 
-# Welcome to Telos®
+# Welcome to Telos
 
 ### Background
 
@@ -41,5 +41,5 @@ The list of characteristics that define the Telos blockchain changes over time a
 * **Prohibition of Voting by Exchanges**: the custodial nature of online exchanges gives them the ability to stake and vote with users' funds, thereby given themselves untoward influence over the network. On Telos exchanges are prohibited from voting with users' funds, giving them less influence.
 * **Block Producer Accountability:** standby Block Producers are periodically cycled into active block production, giving them a chance to prove that their infrastructure is working correctly. Standby Block Producers who fail this test will be penalized, preventing bad actors from launching poor-performing Block Producer nodes.
 
-_Note: considerable content above is used with permission from telosnetwork.io/about_ Telos® in respect to any blockchain usage is a registered trademark. All rights reserved. 
+_Note: considerable content above is used with permission from telosnetwork.io/about_ Telos® in respect to any blockchain usage is a registered trademark. All rights reserved.
 
