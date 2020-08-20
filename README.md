@@ -4,19 +4,13 @@ description: A Sustainably Decentralized Blockchain Network
 
 # Welcome to Telos
 
-### Background
+### About
 
-A few years after the launch of Bitcoin some of its core developers voiced their [desire to extend the blockchain's features](https://bitcointalk.org/index.php?topic=428589.0) by allowing persistence of variables not related to an address' balance. The idea was to create a decentralized blockchain whose scripts \(smart contracts\) could record and modify its variables \(state\). This decentralized computing system, coined the "[Ethereum Virtual Machine](https://github.com/ethereum/wiki/wiki/white-paper)", started to pick up in usage and hit fever pitch in 2017 during the cryptocurrency boom of that year.
+Telos is a public blockchain running on the EOSIO platform which is designed for the real world. Telos is customizable to suit a wide range of business needs across industries with rich role-based security permissions, industry-leading speeds and secure application processing. Building on Telos follows familiar development patterns and programming languages used by existing non-blockchain applications so developers can create a seamless user experience using development tools they already know and love.
 
-While the boom saw Ethereum's price skyrocket, the increased usage of the network shined a spotlight on the network's inability to properly scale with increased usage. Foreseeing the potential for scaling issues, Dan Larimer, a developer with previous experience launching blockchain projects \([Bitshares](https://bitshares.org/) and [Steem](https://steem.com/)\), wrote a [white paper](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md) in early-2017 describing a decentralized virtual machine focused on scalability and based on a new consensus mechanism, [Delegated Proof of Stake](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper) \(DPOS\).
+### Main Blockchain Features
 
-After a year-long ICO that raised 4 billion dollars on the Ethereum blockchain with the ERC-20 EOS Token, Block.One released the EOSIO software to the public on June 1, 2018. A little over a month later, Telos® was started by a group of EOSIO software enthusiasts, block producers \(also known as validators or miners\) and developers who had a vision of what they could do with the software. This vision was about making the most out of the Delegated Proof of Stake \(DPOS\) mechanism and building a governed public blockchain that could operate effectively beyond the traditional “code is law” mindset.
-
-This group quickly grew to more than 120 people from around the world, from teams based in Africa, Asia, Europe, North and South America. This decentralized community became known collectively as the Telos Launch Group \(TLG\). This group self-organized into multiple work groups with various focuses and agendas including coding, development, security, hardware, outreach for exchange listing, public relations, and marketing.
-
-### Network Features at Launch
-
-* Built-in **dispute resolution contract**
+* Telos Decide™ **on chain governance voting system**
 * On-chain **node operator standards** with functioning systems in place that would provide clear enforcement of those standards
 * An inflation-supported **Worker Proposal System** that would provide for continued enhancement of the network
 * An **inverse-weighted voting protocol** designed to discourage collusion and increase participation
@@ -31,7 +25,7 @@ This group quickly grew to more than 120 people from around the world, from team
 
 Armed with a pre-launch checklist, the TLG worked for several months until all of the desired pieces were in place before launching the Telos Blockchain in December of 2018.
 
-## Characteristics of Telos
+## Characteristics of Telos™
 
 The list of characteristics that define the Telos blockchain changes over time as the project reacts to new circumstances and develops new features. Currently, some of Telos's defining characteristics include the following:
 
