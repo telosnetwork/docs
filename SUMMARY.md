@@ -36,6 +36,7 @@
     * [Edit a Profile](developers/telos_contracts/telos-profiles/edit-a-profile.md)
     * [Verify a Profile](developers/telos_contracts/telos-profiles/verify-a-profile.md)
     * [Delete a Profile](developers/telos_contracts/telos-profiles/delete-a-profile.md)
+    * [Manage Metadata](developers/telos_contracts/telos-profiles/manage-metadata.md)
   * [Telos Login](developers/telos_contracts/telos-login/README.md)
     * [Login](developers/telos_contracts/telos-login/login.md)
     * [Logout](developers/telos_contracts/telos-login/logout.md)
