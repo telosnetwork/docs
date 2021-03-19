@@ -9,6 +9,10 @@
 * [Wallets & Accounts](users/wallets.md)
 * [Getting Started](users/getting-some-tlos.md)
 
+## EVM
+
+* [About Ethereum virtual machine](evm/about-ethereum-virtual-machine.md)
+
 ## Developers
 
 * [Tutorials](developers/tutorials/README.md)
