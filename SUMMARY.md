@@ -12,6 +12,7 @@
 ## EVM
 
 * [About Ethereum virtual machine](evm/about-ethereum-virtual-machine.md)
+* [Overview and architecture](evm/overview-and-architecture.md)
 
 ## Developers
 
