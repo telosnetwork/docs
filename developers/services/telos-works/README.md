@@ -9,7 +9,7 @@ description: A Worker Proposal System for the Telos Blockchain Network
 At its core Telos Works is a mechanism for funding community projects. The following is a high-level guide to making a simple proposal and how to navigate the platform along the way.
 
 {% hint style="info" %}
-Telos Works receives 1,000,000 TLOS per month for funding proposals, as per the [TEDP amendment.](https://medium.com/@goodblock_info/understanding-the-telos-economic-development-plan-bd42d4666374) 
+Telos Works receives 1,000,000 TLOS per month for funding proposals, as per the [TEDP amendment.](https://medium.com/@goodblock_info/understanding-the-telos-economic-development-plan-bd42d4666374)
 {% endhint %}
 
 ### 1. Draft a Proposal ✍

@@ -103,7 +103,7 @@ cleos push action works.decide launchprop '{ ... }' -p proposer
 {% endtabs %}
 
 {% hint style="warning" %}
-This action will charge a fee to the proposer's works.decide account balance. The fee is calculated as 5% of the total requested funding from the proposal, plus a flat 10 TLOS fee to cover the Telos Decide ballot fee. 
+This action will charge a fee to the proposer's works.decide account balance. The fee is calculated as 5% of the total requested funding from the proposal, plus a flat 10 TLOS fee to cover the Telos Decide ballot fee.
 
 Note that if the proposal manages to pass a certain acceptance and quorum threshold, the 5% fee will be returned to the proposer's account.
 {% endhint %}
@@ -140,7 +140,7 @@ cleos push action works.decide closems '{ ... }' -p proposer
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
@@ -165,7 +165,7 @@ cleos push action works.decide submitreport '{ ... }' -p proposer
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
@@ -189,7 +189,7 @@ cleos push action works.decide claimfunds '{ ... }' -p proposer
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
@@ -214,7 +214,7 @@ cleos push action works.decide nextms '{ ... }' -p proposer
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}

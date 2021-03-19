@@ -18,11 +18,9 @@ cleos push action telos.login logoutuser '{ ... }' -p user
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

@@ -12,14 +12,12 @@ Currently, some of the more commonly used wallets are the following \(_**note th
 
 * [SQRL](https://sqrlwallet.io/): wallet with support for staking and voting
   * [Telos account creation with SQRL](https://trybe.one/how-to-create-and-open-a-telos-account-using-sqrl/)
-* [Anchor](https://greymass.com/en/anchor): Uses the innovative ESR protocol, created by Telos BP Greymass
-* [Scatter](https://get-scatter.com/): wallet with support for multiple EOSIO chains
+* [Scatter](https://get-scatter.com/): wallet with support for multiple EOS sister chains
   * [Telos account creation with Scatter](https://trybe.one/how-to-setup-your-telos-wallet-using-scatter-so-you-can-change-your-owner-keys/)
 
 ## **Mobile**
 
-* [Anchor](https://greymass.com/en/anchor): Uses the innovative ESR protocol, created by Telos BP Greymass
-* [CoolX](https://wallet.coolx.io/): Does not currently sign for applications but is great for managment of your account and other features
+* TBD
 
 ## Command-Line
 

@@ -101,5 +101,3 @@ Scope: `ballot-name`
 | weighted\_votes | map&lt;name, asset&gt; | Map of ballot option -&gt; total votes. |
 | vote\_time | time\_point\_sec | Time point of vote. |
 
-
-

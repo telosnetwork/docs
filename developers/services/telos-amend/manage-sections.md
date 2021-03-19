@@ -19,7 +19,7 @@ cleos push action amend.decide reorder '{ ... }' -p author
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
@@ -44,7 +44,7 @@ cleos push action amend.decide delsection '{ ... }' -p author
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}

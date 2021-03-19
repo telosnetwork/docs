@@ -30,8 +30,6 @@ A bancor swap service for the Telos Blockchain Network.
 
 {% page-ref page="telos-swap.md" %}
 
-
-
 ## Telos Shops
 
 A decentralized storefront service for the Telos Blockchain Network.

@@ -37,7 +37,7 @@ cleos push action amend.decide launchprop '{ ... }' -p proposer
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
@@ -61,7 +61,7 @@ cleos push action amend.decide endprop '{ ... }' -p proposer
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}
@@ -86,7 +86,7 @@ cleos push action amend.decide amendprop '{ ... }' -p amender
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 
 ```
 {% endtab %}

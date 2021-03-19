@@ -26,7 +26,7 @@ To begin, the document author must call the `newdocument` action on the `amend.d
 | subtitle | string | "A small example document" | The subtitle of the document |
 | document\_name | name | doc1 | The name identifier for the document |
 | author | name | testaccount1 | The telos account of the author |
-| initial\_sections | map&lt;name, string&gt; | { sectiona : "Text here", sectionb: "More text here", sectionc: "A little more text" } ... | The document broken down into a mapping of section names to section content.  |
+| initial\_sections | map&lt;name, string&gt; | { sectiona : "Text here", sectionb: "More text here", sectionc: "A little more text" } ... | The document broken down into a mapping of section names to section content. |
 
 {% tabs %}
 {% tab title="Cleos" %}
@@ -36,7 +36,7 @@ cleos push action amend.decide newdocument '{ ... }' -p author
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 (async () => {
   const result = await api.transact({
     actions: [{
@@ -97,7 +97,7 @@ cleos push action amend.decide editheader '{ ... }' -p author
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 (async () => {
   const result = await api.transact({
     actions: [{
@@ -125,7 +125,7 @@ cleos push action amend.decide editheader '{ ... }' -p author
 
 ## Changing Authors
 
-A document author may relinquish authorship to another account with the `updateauthor` action. 
+A document author may relinquish authorship to another account with the `updateauthor` action.
 
 ### ACTION `updateauthor`
 
@@ -142,7 +142,7 @@ cleos push action amend.decide updateauthor '{ ... }' -p author
 {% endtab %}
 
 {% tab title="eosjs" %}
-```
+```text
 (async () => {
   const result = await api.transact({
     actions: [{
@@ -166,6 +166,4 @@ cleos push action amend.decide updateauthor '{ ... }' -p author
 ```
 {% endtab %}
 {% endtabs %}
-
-## 
 

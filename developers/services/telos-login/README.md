@@ -8,5 +8,3 @@ Telos Login is a decentralized login and session service for the Telos Blockchai
 
 {% page-ref page="logout.md" %}
 
-
-
