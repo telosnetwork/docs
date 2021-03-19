@@ -6,7 +6,7 @@ description: EOS and EVM based fast blockchain with fair distribution and govern
 
 ### About
 
-Telos is a public blockchain running on the EOSIO software.
+Telos is a public blockchain running on the EOSIO software. It is based on the EOS software originally produced by Block One, but uses a modified genesis block where initial account balances were fairly distributed. 
 
 ### Main blockchain features
 
