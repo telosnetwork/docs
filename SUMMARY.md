@@ -13,6 +13,7 @@
 
 * [About Ethereum virtual machine](evm/about-ethereum-virtual-machine.md)
 * [Overview and architecture](evm/overview-and-architecture.md)
+* [Roadmap](evm/roadmap.md)
 
 ## Developers
 
@@ -190,8 +191,4 @@
 * [Community Developer Tools](eosio-docs/community-developer-tools.md)
 * [Get Involved](eosio-docs/get-involved.md)
 * [Glossary](eosio-docs/glossary.md)
-
----
-
-* [Roadmap](roadmap.md)
 
