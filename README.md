@@ -1,5 +1,5 @@
 ---
-description: A Sustainably Decentralized Blockchain Network
+description: EOS and EVM based fast blockchain with fair distribution and governance
 ---
 
 # Welcome to Telos
