@@ -15,6 +15,7 @@
 
 ## Developers
 
+* [Blockchain characteristics](developers/blockchain-characteristics.md)
 * [Tutorials](developers/tutorials/README.md)
   * [cleos](developers/tutorials/cleos.md)
   * [eosjs](developers/tutorials/eosjs.md)
