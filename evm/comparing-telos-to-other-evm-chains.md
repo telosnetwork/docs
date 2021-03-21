@@ -50,8 +50,6 @@ TODO
 
 TODO
 
-### Frontrunning protection
-
 TODO
 
 ### EVM compatibility
@@ -60,7 +58,21 @@ TODO
 
 ### Governance
 
-TODO
+Telos has an on-chain governance. Telos token holders can vote on proposals through SQRL wallet. There are XXX passed proposals. The most important proposal that passed was YYY.
+
+### Frontrunning protection
+
+Frontrunning is a situation where miners or bots trade against your transaction causing monetary loss to you. Especially miners on Ethereum mainnet are suspectible for this. This may cause millions of dollars of losses for decentralised application users. 
+
+Telos has binding rules for block producers. Any block producer that is caught manipulation can be blacklisted through on-chain governance. The fast block speed makes it less likely anyone can frontrun transactions in a public mempool.
+
+| Blockchain | Frontrunning situation |
+| :--- | :--- |
+| Ethereum | Very bad |
+| Telos | Prevented through governance |
+| Binance Smart Chain | Can be frontrun |
+| Polygon | Can be frontrun |
+| Secret Network | Prevented through private transactions |
 
 ### Arbitration
 
