@@ -60,6 +60,19 @@ TODO
 
 Telos has an on-chain governance. Telos token holders can vote on proposals through SQRL wallet. There are XXX passed proposals. The most important proposal that passed was YYY.
 
+### Conflict of interest and regulatory choke points
+
+As explained in the decentralisation paragraph above, Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralisation increases regulatory risk and risk of founders giving up on the project.
+
+| Blockchain | Conflict of interest issues |
+| :--- | :--- |
+| Telos | No conflict |
+| Ethereum | No conflict, except if you have your own chain \(Binance\) |
+| Binance Smart Chain | Conflict of interest for any centralised exchange to integrate with |
+| Polygon | Highly centralised and depends on the Polygon founders |
+
+
+
 ### Frontrunning protection
 
 Frontrunning is a situation where miners or bots trade against your transaction causing monetary loss to you. Especially miners on Ethereum mainnet are suspectible for this. This may cause millions of dollars of losses for decentralised application users. 
