@@ -53,7 +53,7 @@ Telos is based on Delegated Proof of Stake model. There are 21 active block prod
 | Binance Smart Chain | 21 | ? | [~250,000 BNB](https://bscscan.com/validators#) |
 | Polygon | ? | ? | ? |
 
-As the writing of this, data about Polygon block producers and auction prices to become one could not [be found in Poylgon documentation](https://docs.matic.network/). 
+As the writing of this, data about Polygon block producers and auction prices to become one could not [be found in Polygon documentation](https://docs.matic.network/). 
 
 ### Consensus mechanism
 
@@ -72,20 +72,14 @@ Block time, and consensus algorithm, affects how fast the transaction is finalis
 
 | Blockchain | Block time |
 | :--- | :--- |
-| Telos | ~500 ms |
+| Telos | [~500 ms](https://en.wikipedia.org/wiki/EOS.IO) |
 | Ethereum | 15 seconds \(plus mempool delay of several minutes\) |
-| Binance Smart Chain |  |
+| Binance Smart Chain | [3.0 seconds](https://www.bscscan.com/chart/blocktime) |
 | Polygon | [2.2 seconds](https://explorer-mainnet.maticvigil.com/) |
-
-### Transaction throughput
-
-TODO
-
-TODO
 
 ### EVM compatibility
 
-TODO
+Telos EVM JSON-RPC compatibility report is not ready yet.
 
 ### Governance
 
