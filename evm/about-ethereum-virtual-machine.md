@@ -8,14 +8,14 @@ Due to the popularity of Ethereum, EVM and its programming languages Solidity an
 
 Read more
 
-* Overview and architecture
-* Benefits of Telos blockchain compared to other EVM chains \(upcoming content\)
-* Roadmap \(upcoming content\)
-* Compatibility and test suites \(upcoming content\)
-* Testnet example applications \(upcoming content\)
-* Getting started with testnet \(upcoming content\)
-* Getting started with local development \(upcoming content\)
-* Getting started with mainnet \(upcoming content\)
+* [Overview and architecture](overview-and-architecture.md)
+* [Benefits of Telos blockchain compared to other EVM chains ](comparing-telos-to-other-evm-chains.md)
+* [Roadmap ](roadmap.md)
+* _Compatibility and test suites \(upcoming content\)_
+* _Testnet example applications \(upcoming content\)_
+* _Getting started with testnet \(upcoming content\)_
+* _Getting started with local development \(upcoming content\)_
+* _Getting started with mainnet \(upcoming content\)_
 
 
 
