@@ -4,7 +4,9 @@ description: Why Telos is better than other Ethereum Virtual Machine (EVM) chain
 
 # Benefits of Telos compared to EVM chains
 
-Telos builds innovation on the top of Delegated Proof of Stake \(DPoS\) blockchain based on the source code originally from the EOS blockchain. Unique selling points include maturity, decentralisation of stakeholders and a proven on-chain governance model.
+Telos builds innovation on the top of Delegated Proof of Stake \(DPoS\) blockchain based on the source code originally from Block.one's EOS blockchain. Unique selling points include maturity, decentralisation of stakeholders and a proven on-chain governance model.
+
+In this document, we compare Telos and its EVM implementation toa  few well-known EVM chains. Telos has its native WebAssembly based smart contracts, but in here we try to focus on EVM aspects, making comparison easier.
 
 ### Maturity
 
@@ -48,7 +50,7 @@ Ethereum token holders can be found from [EtherScan](https://etherscan.io/accoun
 
 Telos is based on EOS's Delegated Proof of Stake model. There are 21 active block products at a time. [There are total 50 block producers](https://telos.bloks.io/). The reserve block producers are [cycled as described in the Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf). The block producers are ranked and accepted by TLOS holder voting. 
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 Telos does not have minimum staking requirements for a block producer. The new block producers must accept the[ Regproducer Ricardian Contract](https://tbnoa.org/details.html?docid=4) and successfully run on a testnet for one week. This contract also forbids collusion or using custodial TLOS tokens to participate in voting. Block producers watch each other for misbehaviour and can intervene. The on-chain governance can choose block producers 
 
@@ -85,7 +87,9 @@ Block time, and consensus algorithm, affects how fast the transaction is finalis
 
 ### Fees
 
-Currently native Telos transactions have no fees. EVM transactions will have a fee model similar to native Ethereum gas model. You need to have TLOS token to pay for the transaction by EVM instruction price model.
+Currently, native Telos transactions have no fees. Native Telos fees are set by block producers, voted in by token holders. 
+
+EVM transactions will have a fee model similar to [the native Ethereum gas model](https://ethereum.org/en/developers/docs/gas/). The Ethereum account needs to have TLOS token to pay for the transaction. 
 
 | Blockchain  | Fee model |
 | :--- | :--- |
@@ -100,7 +104,13 @@ Telos EVM JSON-RPC compatibility report is not ready yet.
 
 ### Governance
 
-Telos has on-chain governance. Besides choosing the block producers, TLOS holders can draft and vote on proposals. The most common proposals include using Telos treasury to fund initiatives around the Telos ecosystem.
+Telos has very advanced on-chain governance.
+
+TLOS holders can participate in governance. Besides choosing the block producers, TLOS holders can draft and vote on proposals. The most common proposals include using Telos treasury to fund initiatives around the Telos ecosystem.
+
+The underlying Telos blockchain rules are defined in [the system contracts](https://github.com/telosnetwork/telos.contracts), a smart contract suite defining the core of Telos network. Any change to the system contracts must go through code review, block producer acceptance and governance acceptance \(vetoable\). Telos Cover Developers working on the system contract are chain-funded and fireable.
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 The most important proposals are setting the blockchain fees. Currently, there are no fees on TLOS native transactions.
 
@@ -126,11 +136,11 @@ As explained in the decentralisation paragraph above, Telos is highly free of co
 
 Blockchains have an issue [with state bloat](https://blocking.net/1417/blockchain-state-explosion-dilemma-hard-core-series/). If there is no way to reduce the cumulative state of all past transactions, the blockchain state grows out of the capabilities of commodity hardware. This, in turn, will increase the capital cost of running a node and leads to more centralisation.
 
-Below is how different chains tackle the state bloat at the moment.
+Below is how different chains tackle the state bloat at the moment. Native Telos transactions use a resource rent model where different resources \(CPU, network, storage\) are priced separately and can be exchanged and rented. 
 
 | Blockchain | State management model |
 | :--- | :--- |
-| Telos | [State rent](https://medium.com/telos-foundation/telos-users-guide-understanding-telos-rex-d94d081cd7bb) \(does not apply to EVM yet\) |
+| Telos | [Resource exchange model \(REX\)](https://medium.com/telos-foundation/telos-users-guide-understanding-telos-rex-d94d081cd7bb) \(does not apply to EVM yet\) |
 | Ethereum  | No approved proposals |
 | Polygon | No approved proposals |
 | Binance Smart Chain | No approved proposals |
