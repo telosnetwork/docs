@@ -21,7 +21,7 @@ Telos has been continuously operating for three years, showing the robustness of
 
 The number of blocks produced was snapshotted as the writing of the content from the respective block explorers.
 
-### Decentralisation
+### Decentralization
 
 Telos is a fair distribution chain. The original TLOS token distribution was made as wide as possible to ensure that Telos blockchain stays conflict-free and community-led effort. [More information about the fair distribution model is in the original Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf).
 
