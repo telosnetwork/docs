@@ -46,7 +46,7 @@ Ethereum token holders can be found from [EtherScan](https://etherscan.io/accoun
 
 [BNB token holders were taken from EtherScan](https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52#balances). No data ana was done for Binance Chain or Binance Smart Chain.
 
-### Block production and validators
+### Block production and validation
 
 Telos is based on EOS's Delegated Proof of Stake model. There are 21 active block products at a time. [There are total 50 block producers](https://telos.bloks.io/). The reserve block producers are [cycled as described in the Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf). The block producers are ranked and accepted by TLOS holder voting. 
 
