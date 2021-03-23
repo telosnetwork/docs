@@ -6,7 +6,7 @@ description: Why Telos is better than other Ethereum Virtual Machine (EVM) chain
 
 Telos builds innovation on the top of Delegated Proof of Stake \(DPoS\) blockchain based on the source code originally from Block.one's EOS blockchain. Unique selling points include maturity, decentralisation of stakeholders and a proven on-chain governance model.
 
-In this document, we compare Telos and its EVM implementation toa  few well-known EVM chains. Telos has its native WebAssembly based smart contracts, but in here we try to focus on EVM aspects, making comparison easier.
+In this document, we compare Telos and its EVM implementation to a few well-known EVM chains. Telos has its native WebAssembly based smart contracts, but here we try to focus on aspects that make Telos an appealing blockchain to deploy your Solidity/Vyper decentralised application.
 
 ### Maturity
 
