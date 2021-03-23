@@ -4,7 +4,7 @@ description: Why Telos is better than other Ethereum Virtual Machine (EVM) chain
 
 # Benefits of Telos compared to EVM chains
 
-Telos is a Delegated Proof of Stake \(DPoS\) blockchain based on the source code originally from the EOS blockchain. 
+Telos builds innovation on the top of Delegated Proof of Stake \(DPoS\) blockchain based on the source code originally from the EOS blockchain. Unique selling points include maturity, decentralisation of stakeholders and a proven on-chain governance model.
 
 ### Maturity
 
@@ -21,7 +21,9 @@ The number of blocks produced was snapshotted as the writing of the content from
 
 ### Decentralisation
 
-Telos is a fair distribution chain. The original TLOS token distribution was made as wide as possible to ensure that Telos blockchain stays conflict-free and community-led effort. More information about fair distribution model \[TODO add links\]
+Telos is a fair distribution chain. The original TLOS token distribution was made as wide as possible to ensure that Telos blockchain stays conflict-free and community-led effort. [More information about the fair distribution model is in the original Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf).
+
+![How the Telos genesis block was formed from EOS genesis block by doing a haircut on whale investors](../.gitbook/assets/image%20%282%29.png)
 
 Top 10 accounts own % of tokens
 
@@ -34,7 +36,7 @@ Top 10 accounts own % of tokens
 
 The comparison above is a rough overview and does not differentiate between special accounts like centralised exchange wallets, reserves and bridges. 
 
-Telos token holders can be found [on TELOSTRACKER](https://telostracker.io/topHolders).  Telos has a maximum supply cap. The current Telos inflation parameters can be changed by TLOS token holders through governance, but the maximum supply cap cannot be changed. TLOS ERC-20 token accounts were not considered.
+Telos token holders can be found [on TELOSTRACKER](https://telostracker.io/topHolders).  Telos has a maximum supply cap. The current Telos inflation parameters can be changed by TLOS token holders through governance, but the maximum supply cap cannot be changed. Currently Telos has no inflation set. TLOS ERC-20 token accounts were not considered in the top 30. 
 
 Ethereum token holders can be found from [EtherScan](https://etherscan.io/accounts). Ethereum has no supply cap currently and the max supply cap is based on the current supply.
 
@@ -44,11 +46,15 @@ Ethereum token holders can be found from [EtherScan](https://etherscan.io/accoun
 
 ### Block production and validators
 
-Telos is based on Delegated Proof of Stake model. There are 21 active block products at the time. There are total X block producers. The block producers are cycled as Y.
+Telos is based on EOS's Delegated Proof of Stake model. There are 21 active block products at a time. [There are total 50 block producers](https://telos.bloks.io/). The reserve block producers are [cycled as described in the Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf). The block producers are ranked and accepted by TLOS holder voting. 
 
-| Blockchain | Active block producers | Reserve block producers | Cost of becoming a block producer |
+![](../.gitbook/assets/image%20%284%29.png)
+
+Telos does not have minimum staking requirements for a block producer. The new block producers must accept the[ Regproducer Ricardian Contract](https://tbnoa.org/details.html?docid=4) and successfully run on a testnet for one week. This contract also forbids collusion or using custodial TLOS tokens to participate in voting. Block producers watch each other for misbehaviour and can intervene. The on-chain governance can choose block producers 
+
+| Blockchain | Active block producers | Total block producers | Cost of becoming a block producer |
 | :--- | :--- | :--- | :--- |
-| Telos | 21 | 40 |  |
+| Telos | 21 | 50 | No minimum stake |
 | Ethereum | [Top 4 mining pools control 60% of hashing power](https://etherscan.io/stat/miner?range=7&blocktype=blocks) | - | The capital cost of becoming a proof of work miner is in tens of millions of dollars |
 | Binance Smart Chain | 21 | ? | [~250,000 BNB](https://bscscan.com/validators#) |
 | Polygon | ? | ? | ? |
@@ -57,7 +63,7 @@ As the writing of this, data about Polygon block producers and auction prices to
 
 ### Consensus mechanism
 
-Telos and other modern blockchains are not based on proof of work that is energy wasteful way to run a blockchain. [Ethereum has the carbon footprint of Tanzania](https://digiconomist.net/ethereum-energy-consumption/).
+Telos and other modern blockchains are not based on proof of work that is an energy wasteful way to run a blockchain. [Ethereum has the carbon footprint of Tanzania](https://digiconomist.net/ethereum-energy-consumption/).
 
 | Blockchain | Consensus |
 | :--- | :--- |
@@ -73,9 +79,20 @@ Block time, and consensus algorithm, affects how fast the transaction is finalis
 | Blockchain | Block time |
 | :--- | :--- |
 | Telos | [~500 ms](https://en.wikipedia.org/wiki/EOS.IO) |
-| Ethereum | 15 seconds \(plus mempool delay of several minutes\) |
+| Ethereum | 15 seconds \(plus mempool and miner pick up delay of several minutes\) |
 | Binance Smart Chain | [3.0 seconds](https://www.bscscan.com/chart/blocktime) |
 | Polygon | [2.2 seconds](https://explorer-mainnet.maticvigil.com/) |
+
+### Fees
+
+Currently native Telos transactions have no fees. EVM transactions will have a fee model similar to native Ethereum gas model. You need to have TLOS token to pay for the transaction by EVM instruction price model.
+
+| Blockchain  | Fee model |
+| :--- | :--- |
+| Telos | Free - settable by governance |
+| Ethereum | Very high \($30 for a token transfer\) |
+| Binance Smart Chain | Dictated by Binance |
+| Polygon  | ? |
 
 ### EVM compatibility
 
@@ -83,17 +100,26 @@ Telos EVM JSON-RPC compatibility report is not ready yet.
 
 ### Governance
 
-Telos has an on-chain governance. Telos token holders can vote on proposals through SQRL wallet. There are XXX passed proposals. The most important proposal that passed was YYY.
+Telos has on-chain governance. Besides choosing the block producers, TLOS holders can draft and vote on proposals. The most common proposals include using Telos treasury to fund initiatives around the Telos ecosystem.
 
-### Conflict of interest and regulatory choke points
+The most important proposals are setting the blockchain fees. Currently, there are no fees on TLOS native transactions.
 
-As explained in the decentralisation paragraph above, Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralisation increases regulatory risk and risk of founders giving up on the project.
+| Blockchain | Governance model |
+| :--- | :--- |
+| Telos | On-chain voting |
+| Ethereum | [Mixed model developer anarchy and miner wars](https://www.coindesk.com/ethermine-adds-front-running-software-to-help-miners-offset-eip-1559-revenue-losses) |
+| Binance Smart Chain | Binance dictatorship |
+| Polygon | Polygon team dictatorship |
+
+### Conflict of interests
+
+As explained in the decentralisation paragraph above, Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralisation increases regulatory risk, by a government takedown, and the risk of founders giving up on the project.
 
 | Blockchain | Conflict of interest issues |
 | :--- | :--- |
-| Telos | No conflict |
-| Ethereum | No conflict, except if you have your own chain \(Binance\) |
-| Binance Smart Chain | Conflict of interest for any centralised exchange to integrate with |
+| Telos | No conflict due to fair distribution and neutral foundation |
+| Ethereum | No conflict, except if you have your own competing chain \(Binance\) |
+| Binance Smart Chain | Any centralised exchange has a conflict of interest to integrate BSC |
 | Polygon | Highly centralised and depends on the Polygon founders |
 
 ### Scaleability and state bloat
@@ -104,28 +130,30 @@ Below is how different chains tackle the state bloat at the moment.
 
 | Blockchain | State management model |
 | :--- | :--- |
-| Telos | State rent \(does not apply to EVM yet\) |
+| Telos | [State rent](https://medium.com/telos-foundation/telos-users-guide-understanding-telos-rex-d94d081cd7bb) \(does not apply to EVM yet\) |
 | Ethereum  | No approved proposals |
 | Polygon | No approved proposals |
 | Binance Smart Chain | No approved proposals |
 
 ### Frontrunning protection
 
-Frontrunning is a situation where miners or bots trade against your transaction causing monetary loss to you. Especially miners on Ethereum mainnet are suspectible for this. This may cause millions of dollars of losses for decentralised application users. 
+Frontrunning is a situation where miners or bots do a high-frequency trade against your transaction causing monetary loss to you. Especially miners on Ethereum mainnet are susceptible for this. This may cause millions of dollars of losses for decentralised application users. 
 
-Telos has binding rules for block producers. Any block producer that is caught manipulation can be blacklisted through on-chain governance. The fast block speed makes it less likely anyone can frontrun transactions in a public mempool.
+Telos has binding rules for block producers, as described above. Any block producer that is caught manipulation can be blacklisted through on-chain governance. The fast block speed makes it less likely anyone can frontrun transactions in a public mempool.
 
 | Blockchain | Frontrunning situation |
 | :--- | :--- |
-| Ethereum | Very bad - multiple existing frontrun bots |
+| Ethereum | Very bad - [multiple existing frontrun bots](https://www.theblockcrypto.com/genesis/79937/a-case-study-in-miner-extractable-value) |
 | Telos | Prevented through governance |
 | Binance Smart Chain | No mitigation against frontrunning |
 | Polygon | No mitigation against frontrunning |
-| Secret Network | Prevented through private transactions |
+| Secret Network | [Prevented through private transactions](https://scrt.network/blog/secretswap-is-live-on-mainnet) \(best option\) |
 
 ### Arbitration
 
-TODO
+Telos has an arbitration process through a body called Telos Arbitration Organization \(TAO\). There exist a board of arbitrators, elected members voted through TLOS governance. They act independently from block producers. The arbitrators can get involved in dispute cases between Telos users, block producers and deployed smart contracts. [More information about the arbitration process and arbitrators in Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf).
+
+Telos arbitration process has never been invoked. The most common expected case of the invocation would be a large scale hack or a system failure. 
 
 
 

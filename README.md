@@ -15,16 +15,17 @@ Telos is a public blockchain running on the EOSIO software. It is based on the E
 * [EVM compatibility](evm/about-ethereum-virtual-machine.md)
 * 0.5 second block time
 
-### Governance and advanced features
+### Advanced features and governance
 
-* [Telos Decide](developers/telos_contracts/telos-decide/), **on chain governance voting system**
+* * [Telos Decide](developers/telos_contracts/telos-decide/), **on chain governance voting system**
 * On-chain **node operator standards** 
 * **Worker Proposal System:** An inflation-supported system that would provide for continued enhancement of the network
 * **An inverse-weighted voting protocol** designed to discourage collusion and increase participation
 * **IPFS** \(Telos Interplanetary File System\)
 * **Resources administration** program
 * Working **ratify and amend contract** for stakeholders
-* A neutral network support and promotion organization \(**The Telos Foundation\)**
+
+
 
 
 
