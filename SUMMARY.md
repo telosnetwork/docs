@@ -16,6 +16,10 @@
 * [Benefits of Telos compared to EVM chains](evm/comparing-telos-to-other-evm-chains.md)
 * [Roadmap](evm/roadmap.md)
 
+## VALIDATOR NODES
+
+* [Setting up Telos Validator Nodes](validator-nodes/setting-up-telos-validator-nodes.md)
+
 ## Developers
 
 * [Blockchain characteristics](developers/blockchain-characteristics.md)
