@@ -44,7 +44,7 @@ This milestone contains some of the first user testable features of Telos EVM.
     <tr>
       <td style="text-align:left">Unique selling point documentation</td>
       <td style="text-align:left">What makes Telos EVM better than other EVM based chains</td>
-      <td style="text-align:left">&#x1F6D1;</td>
+      <td style="text-align:left">&#x2705;</td>
     </tr>
     <tr>
       <td style="text-align:left">EVM test suit</td>
@@ -60,23 +60,23 @@ This milestone contains some of the first user testable features of Telos EVM.
     <tr>
       <td style="text-align:left">Developer community chat</td>
       <td style="text-align:left">Public chat for Ethereum focused developers</td>
-      <td style="text-align:left">&#x1F6D1;</td>
+      <td style="text-align:left">&#x1F7E1;</td>
     </tr>
     <tr>
       <td style="text-align:left">How to connect to the testnet</td>
       <td style="text-align:left">How the developers can connect to a public EVM JSON-RPC endpoint</td>
       <td
-      style="text-align:left">&#x1F6D1;</td>
+      style="text-align:left">&#x2705;</td>
     </tr>
     <tr>
       <td style="text-align:left">An open-source demo app</td>
       <td style="text-align:left">An ERC-20 token faucet running on testnet EVM</td>
-      <td style="text-align:left">&#x1F6D1;</td>
+      <td style="text-align:left">&#x2705;</td>
     </tr>
     <tr>
       <td style="text-align:left">Testnet token faucet</td>
       <td style="text-align:left">Get EVM TLOS and ERC-20 tokens into your MetaMask</td>
-      <td style="text-align:left">&#x1F6D1;</td>
+      <td style="text-align:left">&#x2705;</td>
     </tr>
   </tbody>
 </table>
