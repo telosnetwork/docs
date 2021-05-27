@@ -29,10 +29,10 @@ EVM is implemented on Telos as a smart contract: all activities that would norma
 
 There are some main differences
 
-* Because the EVM is just another smart contract on the Telos chain, there can exist multiple EVMs on the same chain at the same time. They are differentiated by their EOS account name. 
-* EOS does not have the concept of logs. Whereas Ethereum nodes provide the built-in eth\_getLogs call to query logs, Telos have logs query and history management as an external service called [Hyperion](https://eosrio.io/hyperion/).
-* EVM transactions need to be able to pay native EOS fees for transactions. This bit is managed by the Ethereum compatibility JSON-RPC server that has a native EOS account associated with it. This account is used for broadcasting transactions and the EVM contract credits the spent gas to this account at the end of the transaction.
-* EVM smart contract uses native TLOS token as a gas instead of ETH.
+* Because the EVM is just another smart contract on the Telos chain, there can exist multiple EVMs on the same chain at the same time. They are differentiated by their Telos account name. 
+* Telos does not have the concept of logs. Whereas Ethereum nodes provide the built-in eth\_getLogs call to query logs, Telos has logs query/streaming and history management as an external service called [Hyperion](https://eosrio.io/hyperion/).
+* EVM transactions need to be able to pay native TLOS fees for transactions. This bit is managed by the Ethereum compatibility JSON-RPC server that has a native Telos account associated with it. This account is used for broadcasting transactions to the EVM contract.  Read more about gas fees [here](gas-fees.md).
+* EVM smart contract uses native TLOS token as gas instead of ETH.
 
 ### Other similar projects
 

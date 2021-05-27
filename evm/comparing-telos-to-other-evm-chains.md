@@ -89,18 +89,42 @@ Block time, and consensus algorithm, affects how fast the transaction is finalis
 
 Currently, native Telos transactions have no fees. Native Telos fees are set by block producers, voted in by token holders.
 
-EVM transactions will have a fee model similar to [the native Ethereum gas model](https://ethereum.org/en/developers/docs/gas/). The Ethereum account needs to have TLOS token to pay for the transaction. Telos EVM fees are expected to be &lt; 0.1% of Ethereum gas fees for identical transactions.
+EVM transactions will have a fee model similar to [the native Ethereum gas model](https://ethereum.org/en/developers/docs/gas/). The Ethereum account needs to have TLOS token to pay for the transaction. [Telos EVM fees](gas-fees.md) are expected to be &lt; 0.1% of Ethereum gas fees for identical transactions.
 
 | Blockchain | Fee model |
 | :--- | :--- |
-| Telos | Free - settable by governance |
+| Telos | Free on native & minimal on EVM, settable by governance |
 | Ethereum | Very high \($30 for a token transfer\) |
 | Binance Smart Chain | Dictated by Binance |
 | Polygon | ? |
 
 ## EVM compatibility
 
-Telos EVM JSON-RPC compatibility report is not ready yet.
+Currently supported JSON RPC methods:
+
+```text
+web3_clientVersion
+net_listening
+eth_blockNumber
+net_version
+eth_chainId
+eth_getTransactionCount
+eth_getCode
+eth_getStorageAt
+eth_estimateGas
+eth_gasPrice
+eth_getBalance
+eth_getBalanceHuman  <-- additional for Telos EVM, human readable balance
+eth_call
+eth_sendRawTransaction
+eth_getTransactionReceipt
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBlockByHash
+eth_getBlockTransactionCountByHash
+eth_getBlockTransactionCountByNumber
+eth_getLogs
+```
 
 ## Governance
 
@@ -136,7 +160,9 @@ As explained in the decentralisation paragraph above, Telos is highly free of co
 
 Blockchains have an issue [with state bloat](https://blocking.net/1417/blockchain-state-explosion-dilemma-hard-core-series/). If there is no way to reduce the cumulative state of all past transactions, the blockchain state grows out of the capabilities of commodity hardware. This, in turn, will increase the capital cost of running a node and leads to more centralisation.
 
-Below is how different chains tackle the state bloat at the moment. Native Telos transactions use a resource rent model where different resources \(CPU, network, storage\) are priced separately and can be exchanged and rented.
+Below is how different chains tackle the state bloat at the moment. Native Telos transactions use a resource rent model where different resources \(CPU, network, storage\) are priced separately and can be exchanged and rented.  
+  
+Storage on Telos \(often described as RAM\) has a cost which is set via AMM type system \(using Bancor algorithm\).  The total amount of data stored on chain is what gives us the size of state, if a smart contract removes data from state, the RAM asset is returned to it's original owner \(the account which paid for the storage being recovered\), the state size shrinks and that account can then sell the RAM back to the system if it wishes.  Via this mechanism, responsible usage of storage is maintained.  Beyond state, the full blockchain history is also a neccessary component of the overall blockchain functionality and can be scaled horizontally across a cluster of commodity hardware.  The [Hyperion](https://github.com/eosrio/hyperion-history-api) history solution addresses this for both Telos and the TelosEVM using elastic search and is ran by many Telos validator nodes around the world.
 
 | Blockchain | State management model |
 | :--- | :--- |
@@ -149,7 +175,7 @@ Below is how different chains tackle the state bloat at the moment. Native Telos
 
 Frontrunning is a situation where miners or bots do a high-frequency trade against the transaction of a genuine buyer causing monetary loss to the buyer. Sandwich Trading is a common form of frontrunning on swap pools that consists of viewing a pending transaction in the mempool and issuing another transaction buying a large amount of the same transaction to increase the price prior to the genuine buyer's transaction execution followed by a sale afterwards. The net effect is that value is drawn from the genuine buyer. Frontrunning is accomplished either by bots scouring the mempool for transactions and issuing competing trades with much higher gas fees or, more insidiously, with the participation of miners on the Ethereum mainnet who perform the frontrunning with or paid by the bot operators. This may cause millions of dollars of losses for decentralised application users.
 
-Telos has binding rules for block producers, as described above. Any block producer that is caught manipulation can be blacklisted through on-chain governance. The fast block speed makes it less likely anyone can frontrun transactions in a public mempool. As a result, frontrunning is functionally eliminated from Telos and Telos EVM transactions.
+Telos has binding rules for block producers, as described above. Any block producer that is caught manipulating transaction order can be blacklisted through on-chain governance. The fast block speed makes it less likely anyone can frontrun transactions in a public mempool.  Telos native and more importantly Telos EVM have [fixed transaction costs](gas-fees.md), unlike other systems there is no opportunity for one account to pay a higher fee/gas price to get their transaction processed sooner than another user's transaction.  As a result, frontrunning is functionally eliminated from Telos and Telos EVM transactions.
 
 | Blockchain | Frontrunning situation |
 | :--- | :--- |

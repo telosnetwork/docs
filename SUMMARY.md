@@ -13,6 +13,7 @@
 
 * [About Ethereum virtual machine](evm/about-ethereum-virtual-machine.md)
 * [Overview and architecture](evm/overview-and-architecture.md)
+* [Gas fees](evm/gas-fees.md)
 * [Benefits of Telos compared to EVM chains](evm/comparing-telos-to-other-evm-chains.md)
 * [Roadmap](evm/roadmap.md)
 

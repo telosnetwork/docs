@@ -39,7 +39,7 @@ This milestone contains some of the first user testable features of Telos EVM.
       <td style="text-align:left">Architecture documentation</td>
       <td style="text-align:left">Developer documentation how Telos EVM is structured and how it works</td>
       <td
-      style="text-align:left">&#x1F7E1;</td>
+      style="text-align:left">&#x2705;</td>
     </tr>
     <tr>
       <td style="text-align:left">Unique selling point documentation</td>
@@ -47,7 +47,7 @@ This milestone contains some of the first user testable features of Telos EVM.
       <td style="text-align:left">&#x2705;</td>
     </tr>
     <tr>
-      <td style="text-align:left">EVM test suit</td>
+      <td style="text-align:left">EVM test suite</td>
       <td style="text-align:left">An automated test suite that executes EVM compatibility tests against
         Telos EVM smart contract</td>
       <td style="text-align:left">&#x1F7E1;</td>
@@ -60,7 +60,7 @@ This milestone contains some of the first user testable features of Telos EVM.
     <tr>
       <td style="text-align:left">Developer community chat</td>
       <td style="text-align:left">Public chat for Ethereum focused developers</td>
-      <td style="text-align:left">&#x1F7E1;</td>
+      <td style="text-align:left">&#x2705;</td>
     </tr>
     <tr>
       <td style="text-align:left">How to connect to the testnet</td>
@@ -89,13 +89,13 @@ This milestone contains some of the first user testable features of Telos EVM.
 
 | Task | Description | Status |
 | :--- | :--- | :--- |
-| Gas fee price list | Documentation how Telos EVM consumes gas and what developers should expect | 🛑 |
-| getlogs\(\) compatibility | Solve how to make eth\_getLogs API for Telos | 🟡 |
-| Incompatibility documentation | How Telos EVM differs from Ethereun mainnet EVM | 🛑 |
-| Developer instance automation | Automated set up and tear down of local Telos EVM test instances | 🟡 |
+| Gas fee price list | Documentation how Telos EVM consumes gas and what developers should expect | ✅ |
+| getLogs compatibility | Solve how to make eth\_getLogs API for Telos | ✅ |
+| Incompatibility documentation | How Telos EVM differs from Ethereun mainnet EVM | ✅ |
+| Developer instance automation | Automated set up and tear down of local Telos EVM test instances | ✅ |
 | JSON-RPC test methods | Implementation of time travel, account reset and other test suite specific JSON-RPC methods | 🛑 |
-| JSON-RPC test wrapper | Allow running a test suite against Telos EVM from popular Solidity development frameworks like Truffle, Hardhat and OpenZeppelin | 🛑 |
-| Developer tutorial | A simple Solidity Hello World application on Telos EVM for developers | 🛑 |
+| JSON-RPC test wrapper | Allow running a test suite against Telos EVM from popular Solidity development frameworks like Truffle, Hardhat and OpenZeppelin | ✅ |
+| Developer tutorial | A simple Solidity Hello World application on Telos EVM for developers | ✅ |
 | Blockchain explorer | A basic open-source blockchain explorer that allows you to see EVM transactions on testnet | 🟡 |
 | Complex Dapp example | An example of complex Dapp ported to the testnet \(Uniswap, Aave, others\) | 🛑 |
 
