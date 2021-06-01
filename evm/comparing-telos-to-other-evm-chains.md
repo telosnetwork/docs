@@ -23,7 +23,7 @@ The number of blocks produced was snapshotted as the writing of the content from
 
 ## Decentralization
 
-Telos is a fair-distribution chain. The original TLOS token distribution was made as wide as possible to ensure that Telos blockchain stays conflict-free and community-led effort. [More information about the fair distribution model is in the original Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf).
+Telos is a fair-distribution chain. The original TLOS token distribution was made as wide as possible to ensure that Telos blockchain stays conflict-free and community-led effort. [More information about the fair distribution model is in the original Telos whitepaper](https://telos.net/wp-content/uploads/2021/02/Telos-Whitepaper-master-20180717.pdf).
 
 ![How the Telos genesis block was formed from EOS genesis block by doing a haircut on whale investors](../.gitbook/assets/image%20%282%29.png)
 
@@ -31,7 +31,7 @@ Top 10 accounts own % of tokens
 
 | Blockchain | Number of tokens held by the top 30 accounts | % of tokens held by the top 30 accounts | Max supply cap |
 | :--- | :--- | :--- | :--- |
-| Telos | 300M | 3% | 10B |
+| Telos | 300M | 3% | 355M |
 | Ethereum | 30M | 26% | - |
 | Polygon | 8.8B | 88% | 10B |
 | Binance Smart Chain | 15M | 92% | 16.5M |
@@ -48,7 +48,7 @@ Ethereum token holders can be found from [EtherScan](https://etherscan.io/accoun
 
 ## Block production and validation
 
-Telos is based on EOSIO's Delegated Proof of Stake model. There are 21 active block producers at a time. An additional 21 block producers serve as standbys that are continually tested for readiness by regularly rotating one standby block producer into active production. Any Telos block producers that misses 15% of blocks in any schedule is kicked and the 22nd rank block producer is elevated from standby to active. In this way network resilience is maintained. [There are total of over 50 block producers](https://telos.bloks.io/). The reserve block producers are [cycled as described in the Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf). The block producers are ranked and accepted by TLOS holder voting.
+Telos is based on EOSIO's Delegated Proof of Stake model. There are 21 active block producers at a time. An additional 21 block producers serve as standbys that are continually tested for readiness by regularly rotating one standby block producer into active production. Any Telos block producers that misses 15% of blocks in any schedule is kicked and the 22nd rank block producer is elevated from standby to active. In this way network resilience is maintained. [There are total of over 50 block producers](https://telos.bloks.io/). The reserve block producers are [cycled as described in the Telos whitepaper](https://telos.net/wp-content/uploads/2021/02/Telos-Whitepaper-master-20180717.pdf). The block producers are ranked and accepted by TLOS holder voting.
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
@@ -147,22 +147,22 @@ The most important proposals are setting the blockchain fees. Currently, there a
 
 ## Conflict of interests
 
-As explained in the decentralisation paragraph above, Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralisation increases regulatory risk, by a government takedown, and the risk of founders giving up on the project.
+As explained in the decentralization paragraph above, Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralisation increases regulatory risk, by a government takedown, and the risk of founders giving up on the project.
 
 | Blockchain | Conflict of interest issues |
 | :--- | :--- |
 | Telos | No conflict due to fair distribution and neutral foundation |
 | Ethereum | No conflict, except if you have your own competing chain \(Binance\) |
-| Binance Smart Chain | Any centralised exchange has a conflict of interest to integrate BSC |
-| Polygon | Highly centralised and depends on the Polygon founders |
+| Binance Smart Chain | Any centralized exchange has a conflict of interest to integrate BSC |
+| Polygon | Highly centralized and depends on the Polygon founders |
 
-## Scaleability and state bloat
+## Scalability and state bloat
 
-Blockchains have an issue [with state bloat](https://blocking.net/1417/blockchain-state-explosion-dilemma-hard-core-series/). If there is no way to reduce the cumulative state of all past transactions, the blockchain state grows out of the capabilities of commodity hardware. This, in turn, will increase the capital cost of running a node and leads to more centralisation.
+Blockchains have an issue [with state bloat](https://blocking.net/1417/blockchain-state-explosion-dilemma-hard-core-series/). If there is no way to reduce the cumulative state of all past transactions, the blockchain state grows out of the capabilities of commodity hardware. This, in turn, will increase the capital cost of running a node and leads to more centralization.
 
 Below is how different chains tackle the state bloat at the moment. Native Telos transactions use a resource rent model where different resources \(CPU, network, storage\) are priced separately and can be exchanged and rented.  
   
-Storage on Telos \(often described as RAM\) has a cost which is set via AMM type system \(using Bancor algorithm\).  The total amount of data stored on chain is what gives us the size of state, if a smart contract removes data from state, the RAM asset is returned to it's original owner \(the account which paid for the storage being recovered\), the state size shrinks and that account can then sell the RAM back to the system if it wishes.  Via this mechanism, responsible usage of storage is maintained.  Beyond state, the full blockchain history is also a neccessary component of the overall blockchain functionality and can be scaled horizontally across a cluster of commodity hardware.  The [Hyperion](https://github.com/eosrio/hyperion-history-api) history solution addresses this for both Telos and the TelosEVM using elastic search and is ran by many Telos validator nodes around the world.
+Storage on Telos \(often described as RAM\) has a cost which is set via AMM type system \(using Bancor algorithm\).  The total amount of data stored on chain is what gives us the size of state, if a smart contract removes data from state, the RAM asset is returned to it's original owner \(the account which paid for the storage being recovered\), the state size shrinks and that account can then sell the RAM back to the system if it wishes.  Via this mechanism, responsible usage of storage is maintained.  Beyond state, the full blockchain history is also a necessary component of the overall blockchain functionality and can be scaled horizontally across a cluster of commodity hardware.  The [Hyperion](https://github.com/eosrio/hyperion-history-api) history solution addresses this for both Telos and the TelosEVM using elastic search and is ran by many Telos validator nodes around the world.
 
 | Blockchain | State management model |
 | :--- | :--- |
@@ -173,7 +173,7 @@ Storage on Telos \(often described as RAM\) has a cost which is set via AMM type
 
 ## Frontrunning protection
 
-Frontrunning is a situation where miners or bots do a high-frequency trade against the transaction of a genuine buyer causing monetary loss to the buyer. Sandwich Trading is a common form of frontrunning on swap pools that consists of viewing a pending transaction in the mempool and issuing another transaction buying a large amount of the same transaction to increase the price prior to the genuine buyer's transaction execution followed by a sale afterwards. The net effect is that value is drawn from the genuine buyer. Frontrunning is accomplished either by bots scouring the mempool for transactions and issuing competing trades with much higher gas fees or, more insidiously, with the participation of miners on the Ethereum mainnet who perform the frontrunning with or paid by the bot operators. This may cause millions of dollars of losses for decentralised application users.
+Frontrunning is a situation where miners or bots do a high-frequency trade against the transaction of a genuine buyer causing monetary loss to the buyer. Sandwich Trading is a common form of frontrunning on swap pools that consists of viewing a pending transaction in the mempool and issuing another transaction buying a large amount of the same transaction to increase the price prior to the genuine buyer's transaction execution followed by a sale afterwards. The net effect is that value is drawn from the genuine buyer. Frontrunning is accomplished either by bots scouring the mempool for transactions and issuing competing trades with much higher gas fees or, more insidiously, with the participation of miners on the Ethereum mainnet who perform the frontrunning with or paid by the bot operators. This may cause millions of dollars of losses for decentralized application users.
 
 Telos has binding rules for block producers, as described above. Any block producer that is caught manipulating transaction order can be blacklisted through on-chain governance. The fast block speed makes it less likely anyone can frontrun transactions in a public mempool.  Telos native and more importantly Telos EVM have [fixed transaction costs](gas-fees.md), unlike other systems there is no opportunity for one account to pay a higher fee/gas price to get their transaction processed sooner than another user's transaction.  As a result, frontrunning is functionally eliminated from Telos and Telos EVM transactions.
 
@@ -187,7 +187,7 @@ Telos has binding rules for block producers, as described above. Any block produ
 
 ## Arbitration
 
-Telos has an arbitration process through a body called Telos Arbitration Organization \(TAO\). There exist a board of arbitrators, elected members voted through TLOS governance. They act independently from block producers. The arbitrators can get involved in dispute cases between Telos users, block producers and deployed smart contracts. [More information about the arbitration process and arbitrators in Telos whitepaper](https://resources.telosfoundation.io/telos_white_paper_7_17.pdf).
+Telos has an arbitration process through a body called Telos Arbitration Organization \(TAO\). There exist a board of arbitrators, elected members voted through TLOS governance. They act independently from block producers. The arbitrators can get involved in dispute cases between Telos users, block producers and deployed smart contracts. [More information about the arbitration process and arbitrators in Telos whitepaper](https://telos.net/wp-content/uploads/2021/02/Telos-Whitepaper-master-20180717.pdf).
 
 Telos arbitration process has not yet been invoked but is planned for implementation by the end of 2021 or in any case where it proves critical to the network operations. The most common expected case of the invocation would be a large scale hack or a system failure. Eventually, Telos Arbitration will offer broad conflict resolution services on the Telos blockchain.
 
