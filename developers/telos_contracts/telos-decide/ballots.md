@@ -37,7 +37,11 @@ Ballots have a range of settings that further alter their behavior.
 | lightballot | Marks as a light ballot. | false |
 | revotable | Allows revoting on the ballot. | true |
 | voteliquid | Considers voter's liquid balance into vote weight. | false |
-| votestake | Considers voter's staked balance into vote weight. | true |
+| votestake | Considers voter's staked balance into vote weight. | The value of the Treasury's `stakeable` setting |
+
+You cannot combine both `voteliquid` and `votestake` on the same ballot, you must choose one or the other.  If you choose both, `votestake` setting will be used.  
+  
+If the treasury has `stakeable` set to false, and `voteliquid` is also left set to false, the ballot cannot be voted on, as no accounts will have any vote weight.  This is especially important for the `VOTE` token \(which is a mirror of an account's staked `TLOS` balance\), any ballots using the `VOTE` token should use the `togglebal` action on `votestake` to set it to true, so the ballot can be votable \(this is typically handled by the tool being used, but is noted here for anyone building tools or contract integrations\).
 
 ## Table Breakdown
 
