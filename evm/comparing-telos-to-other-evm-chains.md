@@ -4,7 +4,7 @@ description: Why Telos is better than other Ethereum Virtual Machine (EVM) chain
 
 # Benefits of Telos compared to EVM chains
 
-Telos builds innovation on the top of Delegated Proof of Stake \(DPoS\) blockchain based on the source code originally from Block.one's EOS blockchain. Unique selling points include maturity, decentralization of stakeholders and validators and a proven on-chain governance model.
+Telos builds innovation on top of a Delegated Proof of Stake \(DPoS\) blockchain based on source code originally from Block.one's EOS blockchain. Unique selling points include maturity, decentralization of stakeholders and validators and a proven on-chain governance model.
 
 In this document, we compare Telos and its EVM implementation to a few well-known EVM chains. Telos has native WebAssembly based smart contracts, but this documentation will focus on aspects that make Telos EVM an appealing blockchain to deploy your Solidity/Vyper decentralised application.
 
@@ -44,7 +44,7 @@ Ethereum token holders can be found from [EtherScan](https://etherscan.io/accoun
 
 [Matic token holders were taken from EtherScan](https://etherscan.io/token/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0#balances). No data analysis was done for Polygon network addresses.
 
-[BNB token holders were taken from EtherScan](https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52#balances). No data ana was done for Binance Chain or Binance Smart Chain.
+[BNB token holders were taken from EtherScan](https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52#balances). No data analysis was done for Binance Chain or Binance Smart Chain.
 
 ## Block production and validation
 
@@ -168,8 +168,8 @@ Storage on Telos \(often described as RAM\) has a cost which is set via AMM type
 | :--- | :--- |
 | Telos | [Resource exchange model \(REX\)](https://medium.com/telos-foundation/telos-users-guide-understanding-telos-rex-d94d081cd7bb) \(does not apply to EVM yet\) |
 | Ethereum | No approved proposals |
-| Polygon | No approved proposals |
 | Binance Smart Chain | No approved proposals |
+| Polygon | No approved proposals |
 
 ## Frontrunning protection
 
@@ -179,8 +179,8 @@ Telos has binding rules for block producers, as described above. Any block produ
 
 | Blockchain | Frontrunning situation |
 | :--- | :--- |
-| Ethereum | High incidence - [multiple existing frontrun bots](https://www.theblockcrypto.com/genesis/79937/a-case-study-in-miner-extractable-value) |
 | Telos | Prevented through governance |
+| Ethereum | High incidence - [multiple existing frontrun bots](https://www.theblockcrypto.com/genesis/79937/a-case-study-in-miner-extractable-value) |
 | Binance Smart Chain | No mitigation against frontrunning |
 | Polygon | No mitigation against frontrunning |
 | Secret Network | [Mitigated through private transactions](https://scrt.network/blog/secretswap-is-live-on-mainnet) |

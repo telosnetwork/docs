@@ -36,7 +36,7 @@ Per the spec of the EVM, TLOS as a native currency in the EVM has 18 decimals of
 
 #### Gas price
 
-The gas price is set in the contract, that is the only price that will ever be charged.  EVM transactions are signed and include a gas price that has been signed for.  That gas price from the transaction is respected, if the transaction has provided a gas price less than the configured gas price, the transaction will fail and no gas will be charged.  If the gas price signed for in the transaction is greater than the configured gas price in the contract, then the configured gas price is used.
+The gas price set in the contract is the only price that will ever be charged. EVM transactions are signed and include a gas price that has been signed for.  That gas price from the transaction is respected, if the transaction has provided a gas price less than the configured gas price, the transaction will fail and no gas will be charged.  If the gas price signed for in the transaction is greater than the configured gas price in the contract, then the configured gas price is used.
 
 Because of this fixed gas price and the inherent FIFO nature of Telos transaction processing, there is no means for [frontrunning](comparing-telos-to-other-evm-chains.md#frontrunning-protection) using a higher gas price than another transaction.
 

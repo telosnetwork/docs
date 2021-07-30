@@ -97,11 +97,11 @@ This milestone contains some of the first user testable features of Telos EVM.
 | JSON-RPC test wrapper | Allow running a test suite against Telos EVM from popular Solidity development frameworks like Truffle, Hardhat and OpenZeppelin | ✅ |
 | Developer tutorial | A simple Solidity Hello World application on Telos EVM for developers | ✅ |
 | Blockchain explorer | A basic open-source blockchain explorer that allows you to see EVM transactions on testnet | 🟡 |
-| Complex Dapp example | An example of complex Dapp ported to the testnet \(Uniswap, Aave, others\) | 🛑 |
+| Complex DApp example | An example of complex DApp ported to the testnet \(Uniswap, Aave, others\) | 🛑 |
 
 ### Milestone 3: First mainnet release
 
-EVM readiness for real-word Dapps and decentralised finance.
+EVM readiness for real-word DApps and decentralised finance.
 
 * Mainnet launch with an alpha state
 
@@ -120,7 +120,7 @@ First DeFi applications running on Telos EVM on mainnet
 | :--- | :--- | :--- |
 | ERC-20 bridge | Easily moving tokens between Telos EVM mainnet and other EVM based  blockchains | 🛑 |
 | Telos native and EVM smart contract integration | SDK for integrating between native Telos smart contracts and EVM based contracts | 🛑 |
-| Block producer modifications | Any modifications needed for block producers or system contracts to make Telos EVM more attractive than other EVM based chains as a Dapp execution environment | 🛑 |
+| Block producer modifications | Any modifications needed for block producers or system contracts to make Telos EVM more attractive than other EVM based chains as a DApp execution environment | 🛑 |
 
 
 

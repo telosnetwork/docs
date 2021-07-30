@@ -1,6 +1,6 @@
 ---
 description: >-
-  How EVM on Telos is structured and how it is related to the underlying EOS
+  How EVM on Telos is structured and how it is related to the underlying Telos
   blockchain
 ---
 
@@ -8,7 +8,7 @@ description: >-
 
 ### Classical Ethereum setup
 
-To understand how EVM works on Telos, we need to first look at how EVM based Dapps usually work.
+To understand how EVM works on Telos, we need to first look at how EVM based DApps usually work.
 
 Below is an example of a classical EVM decentralised app design. Both DApp and user wallet connects to an Ethereum node that provides API services over JSON-RPC protocol. Ethereum node manages the state \(accounts and balances\) and logs \(queries of happened events\) for its API user in internal databases.
 
@@ -16,14 +16,14 @@ Below is an example of a classical EVM decentralised app design. Both DApp and u
 
 EVM has two different state databases
 
-* **State** that is the current network state accessible to the smart contracts. Smart contracts can update and read theese.
-* **Logs** that are are the past Solidity events, mainly used for token transfer, centralised exchange integration and DApp transaction histories. Smart contracts cannot access logs.
+* **State** that is the current network state accessible to the smart contracts. Smart contracts can update and read these.
+* **Logs** that are the past Solidity events. It is mainly used for token transfers, centralised exchange integration and DApp transaction histories. Smart contracts cannot access logs.
 
-Dapp communicates with the user wallet over [in-browser ](https://docs.metamask.io/guide/ethereum-provider.html)or [WalletConnect](https://walletconnect.org/) protocol. Both user wallet and Dapp communicate with Ethereum JSON-RPC API to get the blockchain state and logs.
+DApps communicate with the user wallet over [in-browser ](https://docs.metamask.io/guide/ethereum-provider.html)or [WalletConnect](https://walletconnect.org/) protocols. Both user wallet and DApps communicate with Ethereum JSON-RPC API to get the blockchain state and logs.
 
 ### Telos EVM design
 
-EVM is implemented on Telos as a smart contract: all activities that would normally be run by the EVM virtual machine component on an Ethereum node are run by a smart contract on the Telos chain. An Ethereum compatibility JSON-RPC server provides the API Ethereum applications are expecting. It does this by translating the native EOS state from the EVM smart contract to Ethereum expected format.
+EVM is implemented on Telos as a smart contract: all activities that would normally be run by the EVM on an Ethereum node are run by a smart contract on the Telos chain. An Ethereum compatibility JSON-RPC server provides the API Ethereum applications are expecting. It does this by translating the native Telos state from the EVM smart contract to Ethereum expected format.
 
 ![](../.gitbook/assets/telos-telos-evm-design.png)
 
@@ -36,5 +36,5 @@ There are some main differences
 
 ### Other similar projects
 
-A similar EVM as a smart contract approach is also by [the Near blockchain](https://github.com/near/near-evm).
+A similar approach is followed by the [Near blockchain](https://github.com/aurora-is-near/aurora-engine) to construct an EVM from smart contracts.
 
