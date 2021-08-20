@@ -124,6 +124,8 @@ eth_getBlockByHash
 eth_getBlockTransactionCountByHash
 eth_getBlockTransactionCountByNumber
 eth_getLogs
+trace_filter
+trace_transaction
 ```
 
 ## Governance
