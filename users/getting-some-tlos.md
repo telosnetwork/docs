@@ -2,7 +2,7 @@
 description: How to acquire TLOS tokens
 ---
 
-# Getting Started
+# Setting up a wallet
 
 TLOS token is both the governance and resource token of the Telos network and is used for voting on network wide governance ballots, managing transaction quota and purchasing RAM.  Currently, the easiest ways of obtaining TLOS tokens are the following:
 

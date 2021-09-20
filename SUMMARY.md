@@ -7,7 +7,7 @@
 ## Users
 
 * [Wallets & Accounts](users/wallets.md)
-* [Getting Started](users/getting-some-tlos.md)
+* [Setting up a wallet](users/getting-some-tlos.md)
 
 ## EVM
 
@@ -16,6 +16,7 @@
 * [Gas fees](evm/gas-fees.md)
 * [Benefits of Telos compared to EVM chains](evm/comparing-telos-to-other-evm-chains.md)
 * [Roadmap](evm/roadmap.md)
+* [Developing Smart Contracts on Telos-EVM](evm/getting-started.md)
 
 ## VALIDATOR NODES
 
@@ -24,6 +25,7 @@
 ## Developers
 
 * [Blockchain characteristics](developers/blockchain-characteristics.md)
+* [Template](developers/template.md)
 * [Tutorials](developers/tutorials/README.md)
   * [cleos](developers/tutorials/cleos.md)
   * [eosjs](developers/tutorials/eosjs.md)
