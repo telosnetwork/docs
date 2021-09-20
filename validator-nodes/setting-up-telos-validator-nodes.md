@@ -103,13 +103,13 @@ $ sudo apt install ./eosio_2.0.11-1-ubuntu-18.04_amd64.deb
    $ cd eos
    ```
 
-2. Go to required version
+3. Go to required version
 
    ```text
    $ git checkout tags/v2.0.11
    ```
 
-3. update the submodules
+4. update the submodules
 
    ```text
    $ git submodule update --init --recursive
