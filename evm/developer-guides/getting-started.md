@@ -24,7 +24,7 @@ Websocket support is coming soon!
 
 This example demonstrates how to deploy a simple Solidity contract on the Telos EVM testnet using Remix.&#x20;
 
-1. [Add the Telos EVM network](../getting-started/creating-an-evm-address.md#connecting-metamask) as a custom RPC network in Metamask.![](<../../.gitbook/assets/image (12).png>)
+1. [Add the Telos EVM network](../getting-started/creating-an-evm-address-in-telos-wallet.md#connecting-metamask) as a custom RPC network in Metamask.![](<../../.gitbook/assets/image (12).png>)
 2. **Open** [Remix](https://remix.ethereum.org). An example project with the following structure will be created for you. (We will only be working with the `1_Storage.sol` contract.)
 3.  **Compile** the `1_Storage.sol` contract. Click on the `1_Storage.sol` contract to open it in the editor. Navigate to the Solidity compiler_ _tab and click on the "Compile 1\_Storage.sol" button.
 

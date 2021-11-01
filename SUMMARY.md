@@ -13,7 +13,7 @@
 
 * [Getting Started](evm/getting-started/README.md)
   * [Introduction to tEVM](evm/getting-started/introduction-to-tevm.md)
-  * [Creating an EVM address](evm/getting-started/creating-an-evm-address.md)
+  * [Creating an EVM address in Telos Wallet](evm/getting-started/creating-an-evm-address-in-telos-wallet.md)
   * [Deposit, Withdraw and Send TLOS](evm/getting-started/deposit-withdraw-and-send-tlos.md)
   * [Using dapps on the tEVM](evm/getting-started/using-dapps-on-the-tevm.md)
 * [About tEVM](evm/about-ethereum-virtual-machine/README.md)

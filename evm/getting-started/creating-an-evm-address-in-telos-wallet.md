@@ -2,9 +2,11 @@
 description: How to create an account on the tEVM
 ---
 
-# Creating an EVM address
+# Creating an EVM address in Telos Wallet
 
 To get started on the EVM, you'll need to create a Telos account and have TLOS in the account. Instructions for creating and funding a Telos account can be found in the [Wallets & Accounts](../../users/wallets.md) section.&#x20;
+
+You can skip this step by [using a web3 wallet such as MetaMask](creating-an-evm-address-in-telos-wallet.md#connecting-metamask), Trust Wallet etc and [depositing your TLOS from an exchange](deposit-withdraw-and-send-tlos.md).
 
 ## Creating a tEVM address
 
