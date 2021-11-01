@@ -4,7 +4,7 @@ description: How to deposit, withdraw and send TLOS on the Telos EVM.
 
 # Deposit, Withdraw and Send TLOS
 
-The tEVM uses native TLOS to pay for [gas](../about-ethereum-virtual-machine/gas-fees.md), which requires that you have TLOS on your EVM account to do transactions. To deposit TLOS to your EVM address, you need to transfer it from a Telos native account. TLOS can be purchased on the [web-wallet](https://wallet-dev.telos.net) or through one of the official portals listed on [telos.net](https://telos.net).
+The tEVM uses native TLOS to pay for [gas](../about-ethereum-virtual-machine/gas-fees.md), which requires that you have TLOS on your EVM account to do transactions. To deposit TLOS to your EVM address, you need to transfer it from a Telos native account. TLOS can be purchased on the [web-wallet](https://wallet.telos.net) or through one of the official portals listed on [telos.net](https://telos.net).
 
 To top-up an EVM testnet account, enter the address on the [Telos testnet faucet](https://app.telos.net/testnet/developers) and press the "Send Testnet EVM TLOS" button. 100 TLOS will be sent to that address.
 
