@@ -17,34 +17,43 @@ As verified by [Sentnl's Audit](https://s3.eu-central-1.wasabisys.com/audit-cert
 Currently supported JSON RPC methods:
 
 ```
+rpc_modules
+
+net_listening
+net_version
+parity_pendingTransactions // No-op
+
 web3_clientVersion
 
 eth_blockNumber
 eth_chainId
+eth_accounts
 eth_getTransactionCount
 eth_getCode
 eth_getStorageAt
 eth_estimateGas
 eth_gasPrice
 eth_getBalance
-eth_getBalanceHuman  <-- additional for Telos EVM, human readable balance
+eth_getBalanceHuman // custom, returns the float balance instead of wei
 eth_call
 eth_sendRawTransaction
+eth_sendTransaction
 eth_getTransactionReceipt
 eth_getTransactionByHash
 eth_getBlockByNumber
 eth_getBlockByHash
 eth_getBlockTransactionCountByHash
 eth_getBlockTransactionCountByNumber
+eth_getUncleCountByBlockHash
+eth_getUncleCountByBlockNumber
 eth_getLogs
 
-net_listening
-net_version
-
+// trace APIs only support the 'trace' type and not 'vmTrace' or 'stateDiff'
 trace_filter
 trace_transaction
+trace_replayTransaction
+trace_replayBlockTransactions
 trace_block
-trace_replayBlockTransactions (pending)
-trace_replayTransaction (pending)
+trace_get
 ```
 
