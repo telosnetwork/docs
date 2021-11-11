@@ -10,11 +10,11 @@ This section is aimed at jumpstarting new Telos EVM (tEVM) users. If you are tot
 
 Transitioning from other EVMs to the Telos EVM is a seamless experience. You can use any of your favorite tools during development ([Hardhat](https://hardhat.org/getting-started/), [Remix](https://remix.ethereum.org), [Truffle](https://www.trufflesuite.com/docs/truffle/overview), etc.) and simply configure the correct network settings when you are ready to deploy. The table below provides the necessary information for the mainnet and testnet.
 
-| **Setting**        | **Mainnet**                                                                  | **Testnet**                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| RPC URL            | [https://mainnet.telos.net/evm](https://mainnet.telos.net/evm)               | [https://testnet.telos.net/evm](https://testnet.telos.net/evm)               |
-| Chain ID           | 40                                                                           | 41                                                                           |
-| Block explorer URL | [https://mainnet.telos.net/v2/explore](https://testnet.telos.net/v2/explore) | [https://testnet.telos.net/v2/explore](https://testnet.telos.net/v2/explore) |
+| **Setting**        | **Mainnet**                                                    | **Testnet**                                                                  |
+| ------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| RPC URL            | [https://mainnet.telos.net/evm](https://mainnet.telos.net/evm) | [https://testnet.telos.net/evm](https://testnet.telos.net/evm)               |
+| Chain ID           | 40                                                             | 41                                                                           |
+| Block explorer URL | [teloscan.io](https://www.teloscan.io)                         | [https://testnet.telos.net/v2/explore](https://testnet.telos.net/v2/explore) |
 
 {% hint style="warning" %}
 Websocket support is coming soon!

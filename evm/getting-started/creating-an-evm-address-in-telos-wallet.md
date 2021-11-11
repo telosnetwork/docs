@@ -32,3 +32,11 @@ The most convenient way to do this is via [Chainlist](https://chainlist.org), wh
 Now you are setup and ready to deposit, withdraw or send TLOS!
 
 ![The Telos EVM mainnet and testnet listed on Chainlist.](<../../.gitbook/assets/image (10).png>)
+
+If you want to add the networks manually, the values are as follows:
+
+| Setting            | Mainnet                                                        | Testnet                                                                      |
+| ------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| RPC URL            | [https://mainnet.telos.net/evm](https://mainnet.telos.net/evm) | [https://testnet.telos.net/evm](https://testnet.telos.net/evm)               |
+| Chain ID           | 40                                                             | 41                                                                           |
+| Block explorer URL | [teloscan.io](https://www.teloscan.io)                         | [https://testnet.telos.net/v2/explore](https://testnet.telos.net/v2/explore) |
