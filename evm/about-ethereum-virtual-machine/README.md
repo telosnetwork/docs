@@ -2,7 +2,7 @@
 
 This section is mainly intended for developers who are working with Solidity to bring their smart contracts onto Telos.
 
-Since Telos EVM (tEVM) is an EVM running on a Telos blockchain, it makes itt easy to bring existing Solidity applications to Telo. This enabler developers to adopt Telos blockchai, with itse advanced featuresllike fair distribution, fast block times and cost-efficient transactions.
+Since Telos EVM (tEVM) is an EVM running on the Telos blockchain, it makes it easy to bring existing Solidity applications to Telos. This enables developers to adopt Telos blockchain, with it's advanced features like fair distribution, fast block times and cost-efficient transactions.
 
 Read more on tEVM
 
