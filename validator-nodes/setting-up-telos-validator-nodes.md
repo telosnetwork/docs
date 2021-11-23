@@ -91,39 +91,31 @@ $ sudo apt install ./eosio_2.0.11-1-ubuntu-18.04_amd64.deb
 
 ### Compile source code method
 
-1. Clone the `EOSIO/EOS` repository from Github like this:
+1. (Skip to step 2 if already cloned) Clone the `EOSIO/EOS` repository from Github like this:
 
    ```text
-   $ git clone https://github.com/EOSIO/eos.git --recursive` [NOT NEEDED, if already cloned]
+   $ git clone https://github.com/EOSIO/eos.git --recursive 
    ```
 
-> NOTE: The step-1 is not needed, if the repository is already cloned. Directly, start from step-2.
-
-1. Go to the `eos` folder 
+2. Go to the `eos` folder 
 
    ```text
    $ cd eos
    ```
 
-2. pull the repository with required released version 
+3. Go to required version
 
    ```text
-   $ git pull https://github.com/EOSIO/eos.git v2.0.11`
+   $ git checkout tags/v2.0.11
    ```
 
-3. update the submodules
+4. update the submodules
 
    ```text
-   $ git submodule update --init --recursive`
+   $ git submodule update --init --recursive
    ```
 
-4. Go to required version
-
-   ```text
-   $ git checkout tags/v2.0.11`
-   ```
-
-## run Nodeos
+## Run Nodeos
 
 `nodeos` generally runs in 2 modes:
 
