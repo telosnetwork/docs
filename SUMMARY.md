@@ -7,32 +7,10 @@
 ## Users
 
 * [Wallets & Accounts](users/wallets.md)
-* [Setting up a wallet](users/getting-some-tlos.md)
-
-## Telos EVM <a href="evm" id="evm"></a>
-
-* [Getting Started](evm/getting-started/README.md)
-  * [Introduction to tEVM](evm/getting-started/introduction-to-tevm.md)
-  * [Creating an EVM address in Telos Wallet](evm/getting-started/creating-an-evm-address-in-telos-wallet.md)
-  * [Deposit, Withdraw and Send TLOS](evm/getting-started/deposit-withdraw-and-send-tlos.md)
-  * [Using dapps on the tEVM](evm/getting-started/using-dapps-on-the-tevm.md)
-* [About tEVM](evm/about-ethereum-virtual-machine/README.md)
-  * [Overview and architecture](evm/about-ethereum-virtual-machine/overview-and-architecture.md)
-  * [Benefits of Telos compared to EVM chains](evm/about-ethereum-virtual-machine/comparing-telos-to-other-evm-chains.md)
-  * [Gas fees](evm/about-ethereum-virtual-machine/gas-fees.md)
-  * [Roadmap](evm/about-ethereum-virtual-machine/roadmap.md)
-* [Developer Guides](evm/developer-guides/README.md)
-  * [Developing Smart Contracts on Telos EVM](evm/developer-guides/getting-started.md)
-  * [EVM Compatibility](evm/developer-guides/evm-compatibility.md)
-
-## VALIDATOR NODES
-
-* [Setting up Telos Validator Nodes](validator-nodes/setting-up-telos-validator-nodes.md)
+* [Getting Started](users/getting-some-tlos.md)
 
 ## Developers
 
-* [Blockchain characteristics](developers/blockchain-characteristics.md)
-* [Template](developers/template.md)
 * [Tutorials](developers/tutorials/README.md)
   * [cleos](developers/tutorials/cleos.md)
   * [eosjs](developers/tutorials/eosjs.md)

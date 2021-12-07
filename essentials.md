@@ -36,6 +36,7 @@ Some of the endpoints are:
 
 ### Mainnet
 
+* https://api.telos.alohaeos.com
 * https://telos.caleos.io
 * https://telos.greymass.com
 * https://api.telosgermany.io

@@ -6,7 +6,7 @@ description: Read below to learn more about Treasuries
 
 ## **What is a Treasury?**
 
-Treasuries contain information like the current supply of tokens, the max supply, the group settings, and the name of the current manager. Note that tokens cannot exist on Telos Decide™ without an accompanying Treasury.
+Treeasuries contain information like the current supply of tokens, the max supply, the group settings, and the name of the current manager. Note that tokens cannot exist on Telos Decide™ without an accompanying Treasury.
 
 ## **What is a Treasury Symbol?**
 

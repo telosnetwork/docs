@@ -1,6 +1,6 @@
 # Telos Contracts
 
-## Telos Decide
+## Telos Decide™
 
 A Governance Engine exclusively for the Telos Blockchain Network that offers voting services, DAC/DAO management, token creation, and more.
 
