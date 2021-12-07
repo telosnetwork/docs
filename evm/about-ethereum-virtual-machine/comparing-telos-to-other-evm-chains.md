@@ -4,7 +4,7 @@ description: Why Telos is better than other Ethereum Virtual Machine (EVM) chain
 
 # Benefits of Telos compared to EVM chains
 
-&#x20;section above, Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralization increases regulatory risk by a government take down, and the risk of founders abandoning the project.Telos builds innovation on top of a Delegated Proof of Stake (DPoS) consensus mechanism. This mechanism is based on source code originally from Block.one's EOS blockchain. Their unique selling points include maturity, decentralization of stakeholders and validators, and a proven on-chain governance model.
+Telos is highly free of conflict of interest due to wide token distribution. This makes it a good candidate for co-operation among large and small cryptocurrency ecosystem actors. Furthermore, centralization increases regulatory risk by a government take down, and the risk of founders abandoning the project. Telos builds innovation on top of a Delegated Proof of Stake (DPoS) consensus mechanism. This mechanism is based on source code originally from Block.one's EOS blockchain. Their unique selling points include maturity, decentralization of stakeholders and validators, and a proven on-chain governance model.
 
 In this document, a comparison between Telos and its EVM implementation and a few other well-known EVM chains are presented. One of Telos distinguishing features include the use of native WebAssembly based smart contracts, but in this section our focus will be on other aspects that make Telos EVM an appealing blockchain to deploy your Solidity/Vyper decentralized application.
 

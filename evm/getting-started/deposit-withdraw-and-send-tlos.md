@@ -12,9 +12,9 @@ To top-up an EVM testnet account, enter the address on the [Telos testnet faucet
 
 ### Option 1: Depositing TLOS from telos native account
 
-After acquiring TLOS, you can send it to your EVM address using the [web-wallet](https://wallet-dev.telos.net), which you can also use to send to other EVM addresses such as Metamask. Make sure you have [added the Telos EVM](creating-an-evm-address-in-telos-wallet.md#connecting-metamask) network to your Metamask.
+After acquiring TLOS, you can send it to your EVM address using the [web-wallet](https://wallet.telos.net), which you can also use to send to other EVM addresses such as Metamask. Make sure you have [added the Telos EVM](creating-an-evm-address-in-telos-wallet.md#connecting-metamask) network to your Metamask.
 
-1. Once logged in to the [web-wallet](https://wallet-dev.telos.net), click on the deposit to EVM button (as shown below).
+1. Once logged in to the [web-wallet](https://wallet.telos.net), click on the deposit to EVM button (as shown below).
 
 ![](../../.gitbook/assets/EVM\_deposit.png)
 
