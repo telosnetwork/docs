@@ -81,7 +81,7 @@ Block time and consensus algorithm affects how fast a transaction is finalized, 
 
 | Blockchain          | Block time                                                              |
 | ------------------- | ----------------------------------------------------------------------- |
-| Telos               | [500 ms](https://en.wikipedia.org/wiki/EOS.IO) / 2 txs per second       |
+| Telos               | [500 ms](https://en.wikipedia.org/wiki/EOS.IO) / 2 blocks per second       |
 | Ethereum            | 12-15 seconds (plus mempool and miner pick up delay of several minutes) |
 | Binance Smart Chain | [3.0-5.0 seconds](https://www.bscscan.com/chart/blocktime)              |
 | Polygon             | [2.2 seconds](https://explorer-mainnet.maticvigil.com)                  |
