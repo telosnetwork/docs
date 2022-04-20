@@ -2,7 +2,7 @@
 description: Now we're talking!
 ---
 
-# Using dapps on the tEVM
+# Using dApps on the tEVM
 
 Interacting with dapps on the tEVM is the same as with other Ethereum-based network (Ethereum, BSC). Simply go to the dapp, connect your wallet using Metamask and sign the transactions as you normally would.
 
@@ -30,4 +30,4 @@ To start swapping tokens on the tEVM testnet, you can go to the following websit
 
 ## List of dapps
 
-Upcoming content...
+Will be updated in the near future. In the meantime, visit our [website](https://www.telos.net) for more information.

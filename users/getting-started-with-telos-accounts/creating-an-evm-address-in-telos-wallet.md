@@ -1,0 +1,48 @@
+---
+description: How to create an account on the tEVM
+---
+
+# Creating an EVM address in Telos Wallet
+
+To get started on the EVM, you'll need to create a Telos account and have TLOS in the account. Instructions for creating and funding a Telos account can be found in the [Wallets & Accounts](../wallets.md) section.&#x20;
+
+You can skip this step by [using a web3 wallet such as MetaMask](creating-an-evm-address-in-telos-wallet.md#connecting-metamask), Trust Wallet etc. and [depositing your TLOS from an exchange](../../evm/getting-started/deposit-withdraw-and-send-tlos.md).
+
+## Creating a tEVM address
+
+A tEVM address links your native Telos account to a newly generated EVM address. This address is unique to your Telos account. TLOS on the tEVM can be deposited and withdrawn from this tEVM address.
+
+Once you've got a Telos account, creating a tEVM address is simple.
+
+1. Go to the Telos [web-wallet](https://wallet.telos.net) and log in with your Telos account.
+2. Click on the "**Generate EVM address**" button.&#x20;
+
+<img src="../../.gitbook/assets/EVM_createaddr.png" alt="" data-size="original">
+
+3\. You should now see your unique EVM address linked to your Telos account.
+
+4\. Alternatively, you can deposit to the EVM, and it will automatically generate a new address with the first deposit. This process is covered in more details in the [next section](../../evm/getting-started/deposit-withdraw-and-send-tlos.md).
+
+You can also navigate to [https://help.telos.net/en\_US/evm/creating-a-tevm-address](https://help.telos.net/en\_US/evm/creating-a-tevm-address) for more details.
+
+## Connecting Metamask
+
+Telos EVM fully supports [Metamask](https://metamask.io), a leading wallet for Ethereum based blockchains. In order to interact with the tEVM using Metamask, you need to add the network to Metamask.&#x20;
+
+The most convenient way to do this is via [Chainlist](https://chainlist.org), which curates a list of EVM networks. The Telos EVM mainnet and testnet are listed on Chainlist with ChainIDs 40 and 41, respectively. To add a chain to Metamask, connect your wallet and press the "Add To Metamask" button.
+
+Now you are setup and ready to deposit, withdraw or send TLOS!
+
+![The Telos EVM mainnet and testnet listed on Chainlist.](<../../.gitbook/assets/image (10).png>)
+
+If you want to add the networks manually, the values are as follows:
+
+| Setting            | Mainnet                                                        | Testnet                                                        |
+| ------------------ | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| RPC URL            | [https://mainnet.telos.net/evm](https://mainnet.telos.net/evm) | [https://testnet.telos.net/evm](https://testnet.telos.net/evm) |
+| Chain ID           | 40                                                             | 41                                                             |
+| Block explorer URL | [teloscan.io](https://www.teloscan.io)                         | [https://testnet.teloscan.io/](https://testnet.teloscan.io)    |
+
+{% hint style="info" %}
+For more information on how to create a tEVM address, please click [here](https://help.telos.net/en\_US/evm/creating-a-tevm-address).
+{% endhint %}

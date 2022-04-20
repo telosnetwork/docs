@@ -4,7 +4,7 @@ description: How to deposit, withdraw and send TLOS on the Telos EVM.
 
 # Deposit, Withdraw and Send TLOS
 
-The tEVM uses native TLOS to pay for [gas](../about-ethereum-virtual-machine/gas-fees.md), which requires that you have TLOS on your EVM account to do transactions. To deposit TLOS to your EVM address, you need to transfer it from a Telos native account. TLOS can be purchased on the [web-wallet](https://wallet.telos.net) or through one of the official portals listed on [telos.net](https://telos.net).
+The tEVM uses native TLOS to pay for [gas](gas-fees.md), which requires that you have TLOS on your EVM account to do transactions. To deposit TLOS to your EVM address, you need to transfer it from a Telos native account. TLOS can be purchased on the [web-wallet](https://wallet.telos.net) or through one of the official portals listed on [telos.net](https://telos.net).
 
 To top-up an EVM testnet account, enter the address on the [Telos testnet faucet](https://app.telos.net/testnet/developers) and press the "Send Testnet EVM TLOS" button. 100 TLOS will be sent to that address.
 
@@ -12,7 +12,7 @@ To top-up an EVM testnet account, enter the address on the [Telos testnet faucet
 
 ### Option 1: Depositing TLOS from telos native account
 
-After acquiring TLOS, you can send it to your EVM address using the [web-wallet](https://wallet.telos.net), which you can also use to send to other EVM addresses such as Metamask. Make sure you have [added the Telos EVM](creating-an-evm-address-in-telos-wallet.md#connecting-metamask) network to your Metamask.
+After acquiring TLOS, you can send it to your EVM address using the [web-wallet](https://wallet.telos.net), which you can also use to send to other EVM addresses such as Metamask. Make sure you have [added the Telos EVM](../../users/getting-started-with-telos-accounts/creating-an-evm-address-in-telos-wallet.md#connecting-metamask) network to your Metamask.
 
 1. Once logged in to the [web-wallet](https://wallet.telos.net), click on the deposit to EVM button (as shown below).
 
@@ -29,9 +29,9 @@ If you currently have TLOS on [Gate.io](https://www.gate.io) or [KuCoin](https:/
 {% hint style="info" %}
 Make sure that the address and memo is:
 
-**Address: **deposit.evm
+**Address:** deposit.evm
 
-**Memo: **(Your EVM address)
+**Memo:** (Your EVM address)
 {% endhint %}
 
 ![](../../.gitbook/assets/EVM\_ku.jpg)![](../../.gitbook/assets/EVM\_gate.jpg)
