@@ -18,7 +18,7 @@ Depending on which approach you follow (either Telos Native or Telos EVM) there 
    * Chain ID : 40&#x20;
    * Symbol : TLOS&#x20;
    * Block Explorer URL : https://teloscan.io
-3. [Send TLOS to your account](getting-some-tlos.md)
+3. [Send TLOS to your account](../getting-some-tlos.md)
    * Follow our CEX, DEX, and Telos Native guides to send TLOS to your new Telos EVM account.
 
 ### Telos Native
@@ -27,7 +27,7 @@ Depending on which approach you follow (either Telos Native or Telos EVM) there 
 2. [Create a free account](https://www.telos.net/#getting-started)
    * To use Anchor you will need to create a free account first.
    * You can import the account using its Private Key in Setup Account > Import > Private Key
-3. [Send TLOS to your account](getting-some-tlos.md)
+3. [Send TLOS to your account](../getting-some-tlos.md)
    * Follow our CEX, DEX, and Telos Native guides to send TLOS to your new Telos account.
 
 {% hint style="info" %}

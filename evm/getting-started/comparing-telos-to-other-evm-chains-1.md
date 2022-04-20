@@ -38,7 +38,7 @@ Telos and other modern blockchains are not based on the classic proof of work (P
 | Binance Smart Chain | Proof of Authority (PoA) [Parlia](https://docs.binance.org/smart-chain/guides/concepts/consensus.html), inspired by Clique |
 | Polygon             | Proof of Authority (PoA) [Bor](https://docs.matic.network/docs/contribute/bor/consensus/), inspired by Clique              |
 
-For an in depth discussion on the protocol driving Telos consensus, click [here](../../for-developers/overview/protocol/consensus\_protocol.md#2.-consensus-models).
+For an in depth discussion on the protocol driving Telos consensus, click [here](../../developers/platform/protocol/consensus\_protocol.md#2.-consensus-models).
 
 ## Block Time
 
@@ -51,13 +51,13 @@ Block time and consensus algorithm affects how fast a transaction is finalized, 
 | Binance Smart Chain | [3.0-5.0 seconds](https://www.bscscan.com/chart/blocktime)              |
 | Polygon             | [2.2 seconds](https://explorer-mainnet.maticvigil.com)                  |
 
-For more information on block time, click [here](../../for-developers/overview/protocol/consensus\_protocol.md#1.1.-block-producers).
+For more information on block time, click [here](../../developers/platform/protocol/consensus\_protocol.md#1.1.-block-producers).
 
 ## Fees
 
 Currently, native Telos transactions have no fees. Native Telos fees are set by block producers and voted by token holders.
 
-EVM transactions will have a fee model similar to [the native Ethereum gas model](https://ethereum.org/en/developers/docs/gas/). The Ethereum account needs to have TLOS token to pay for the transaction. [Telos EVM fees](gas-fees.md) are expected to be < 0.1% of Ethereum gas fees for identical transactions.
+EVM transactions will have a fee model similar to [the native Ethereum gas model](https://ethereum.org/en/developers/docs/gas/). The Ethereum account needs to have TLOS token to pay for the transaction. [Telos EVM fees](../about-ethereum-virtual-machine/gas-fees.md) are expected to be < 0.1% of Ethereum gas fees for identical transactions.
 
 The table provides a summary of four mainstream blockchains with its respective pricing (fees) model.
 

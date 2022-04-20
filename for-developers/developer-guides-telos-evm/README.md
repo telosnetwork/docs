@@ -4,7 +4,7 @@ EVM Smart Contracts are supported by the tEVM. These smart contracts work simila
 
 The following sections contain guidelines on how to start with smart contracts on Telos EMV.
 
-1. [EVM Compatibility](evm-compatibility.md)
-2. [Developing & Deploying Smart Contracts for tEVM](getting-started.md)
+1. [EVM Compatibility](../../evm/developer-guides/evm-compatibility.md)
+2. [Developing & Deploying Smart Contracts for tEVM](../../evm/developer-guides/getting-started.md)
 3. [Verifying smart contract code](verifying-smart-contract-source-code.md)
 

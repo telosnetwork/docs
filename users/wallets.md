@@ -1,5 +1,5 @@
 ---
-description: Your portal into the Telos Network.
+description: Store & Interact with the Telos Network
 ---
 
 # Accounts and Wallets
@@ -40,12 +40,11 @@ The desktop version enables users to store their wallet directly on their comput
 
 ### Telos Native
 
-* [Anchor](https://greymass.com/en/anchor): Uses the innovative ESR protocol, created by Telos BP Greymass
-* Wombat
-* [Scatter](https://get-scatter.com): Wallet with support for multiple EOSIO chains
-  * [Telos account creation with Scatter](https://trybe.one/how-to-setup-your-telos-wallet-using-scatter-so-you-can-change-your-owner-keys/)
-* [SQRL](https://sqrlwallet.io): Wallet with support for staking and voting
+* [SQRL](https://sqrlwallet.io): wallet with support for staking and voting
   * [Telos account creation with SQRL](https://trybe.one/how-to-create-and-open-a-telos-account-using-sqrl/)
+* [Anchor](https://greymass.com/en/anchor): Uses the innovative ESR protocol, created by Telos BP Greymass
+
+
 
 ### tEVM
 
@@ -55,14 +54,13 @@ The desktop version enables users to store their wallet directly on their comput
 ## **Mobile Wallets**
 
 * [Anchor](https://greymass.com/en/anchor): Uses the innovative ESR protocol, created by Telos BP Greymass
-* Wombat
 
 ## Command-Line **Wallet**
 
-* [CLEOS](../for-developers/developer-guides-telos-native/tutorials/cleos.md): developed by [Block.One](https://block.one)
+* [CLEOS](../developers/tutorials/cleos.md): developed by [Block.One](https://block.one)
 
 Creating a Telos account typically requires a small deposit of another cryptocurrency, and should be finalized shortly after payment. From this point forward your account name can be used as your receiving address, and will be used to identify you on the blockchain.
 
 {% hint style="info" %}
-For a more in-depth discussion on Accounts and account Permissions, click [here](../for-developers/overview/protocol/accounts\_and\_permissions.md).
+For a more in-depth discussion on Accounts and account Permissions, click [here](../developers/platform/protocol/accounts\_and\_permissions.md).
 {% endhint %}

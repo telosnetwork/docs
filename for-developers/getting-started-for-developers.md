@@ -8,11 +8,11 @@ This section is for developers interested in developing Telos Native dApps or br
 
 This section will guide you through the following topics:
 
-1.  An [overview](overview/) is provided regarding Telos Blockchain Network:
+1.  An [overview](../developers/platform/overview/) is provided regarding Telos Blockchain Network:
 
-    * [Core concepts](overview/core\_concepts.md)
-    * [Technical Features](overview/technical-features.md)
-    * [Protocols](overview/protocol/)
+    * [Core concepts](../developers/platform/overview/core\_concepts.md)
+    * [Technical Features](../developers/platform/overview/technical-features.md)
+    * [Protocols](../developers/platform/protocol/)
 
 
 2.  [Telos EVM](developer-guides-telos-evm/)

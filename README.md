@@ -41,8 +41,8 @@ Telos enables developers to upgrade their smart contracts without requiring them
 
 What if you had it all? With Telos you get:
 
-* A [delegated proof-of-stake (DPoS)](for-developers/overview/protocol/consensus\_protocol.md#3.-eosio-consensus-dpos-+-abft) consensus mechanism.
-* [EOSIO compatibility](for-developers/overview/) and [EVM compatibility](evm/getting-started/introduction-to-tevm.md).
+* A [delegated proof-of-stake (DPoS)](developers/platform/protocol/consensus\_protocol.md#3.-eosio-consensus-dpos-+-abft) consensus mechanism.
+* [EOSIO compatibility](developers/platform/overview/) and [EVM compatibility](evm/getting-started/introduction-to-tevm.md).
 * A Fast and scalable architecture - [10,000 TPS with 0.5 second block time](https://www.telos.net/evm#speed-scalability).
 * [No Gas fees](https://www.telos.net/evm#micro-transactions) - No gas fees on Native and insignificant fees on EVM to keep spammers away.
 * [No front-running](https://www.telos.net/evm#Frontrunning-Outrun) - First in, first out transactions functionally eliminate front running)
@@ -56,15 +56,15 @@ For more information, visit [telos.net](https://www.telos.net)
 
 Telos offers a wide array of other advances features.
 
-* [Telos Decide](for-developers/developer-guides-telos-native/telos\_contracts/telos-decide/), **on chain governance voting system**
+* [Telos Decide](developers/telos\_contracts/telos-decide/), **on chain governance voting system**
 * On-chain **node operator standards**&#x20;
-* ****[**Worker Proposal System**](introduction-to-telos/blockchain-characteristics.md)**:** An inflation-supported system that would provide for continued enhancement of the network
+* ****[**Worker Proposal System**](developers/blockchain-characteristics.md)**:** An inflation-supported system that would provide for continued enhancement of the network
 * **An inverse-weighted voting protocol** designed to discourage collusion and increase participation
 * **IPFS** (Telos Interplanetary File System)
 * **Resources administration** program
 * Working **ratify and amend contract** for stakeholders
 
-_To read more about Telos Blockchain Networks' other defining characteristics, click_ [_here_](introduction-to-telos/blockchain-characteristics.md)_._
+_To read more about Telos Blockchain Networks' other defining characteristics, click_ [_here_](developers/blockchain-characteristics.md)_._
 
 {% hint style="warning" %}
 ### Disclaimer
