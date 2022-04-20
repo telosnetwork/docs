@@ -26,6 +26,7 @@
   * [Gas fees](evm/about-ethereum-virtual-machine/gas-fees.md)
   * [Deposit, Withdraw and Send TLOS](evm/getting-started/deposit-withdraw-and-send-tlos.md)
   * [Using dApps on the tEVM](evm/getting-started/using-dapps-on-the-tevm.md)
+  * [Telos EVM Controller](evm/getting-started/telos-evm-controller.md)
 * [Roadmap](evm/about-ethereum-virtual-machine/roadmap.md)
 
 ## Block Producers
