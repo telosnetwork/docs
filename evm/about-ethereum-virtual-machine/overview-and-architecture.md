@@ -22,7 +22,7 @@ To understand how EVM works on Telos, we need to first look at how EVM based dAp
 
 Below is an illustration of a classical EVM decentralized app design. Both the dApp and user wallet connects to an Ethereum node that provides API services over JSON-RPC protocol. The Ethereum node manages the state (accounts and balances) and logs (queries of events) for its API user in internal databases (state database and logs database respectively).
 
-![Classical EVM dApp design](../../.gitbook/assets/Telos.png)
+![Classical EVM dapp design](../../.gitbook/assets/Telos.png)
 
 The two EVM databases are
 
@@ -43,11 +43,14 @@ Telos can process 10 000 transactions per second (TPS) using a fraction of the e
 
 ![Telos EVM dapp design](<../../.gitbook/assets/Telos - Telos EVM design.png>)
 
-Here are some of the main differences.
+The Telos EVM can be used with all of the common tools used on other EVMs (remix, hardhat, truffle, web3, ethers.js, etc..) and we encourage using those mature tools from the ecosystem.While for end users there should be no noticeable difference, it may be interesting to know some differences.&#x20;
 
-* Since the EVM is just another smart contract on the Telos blockchain, multiple EVMs can exist on the same chain at the same time. They are differentiated by their Telos account name.&#x20;
+Here are some of the main differences between the Telos EVM and other EVMs such as go-ethereum:&#x20;
+
+* Gas price is fixed, you can enter a higher price but will only be charged the current set price, you cannot enter a lower price or the transaction will be rejected (no gas charged). This means you cannot front run other transactions or speed yours up, but block times are .5 seconds so there is no need to speed them up.&#x20;
+* Since the EVM is just another smart contract on the Telos blockchain, multiple EVMs can exist on the same chain at the same time. They are differentiated by their Telos account name. They are differentiated by their Telos account name. There is currently only one EVM on Telos, under the “eosio.evm” account name for both mainnet and testnet. &#x20;
 * Telos does not have the concept of logs, whereas Ethereum nodes provide the built-in eth\_getLogs call to query logs. Telos has logs query/streaming and history management as an external service called [Hyperion](https://eosrio.io/hyperion/).
-* EVM transactions need to be able to pay native TLOS fees for transactions. This process is managed by the Ethereum compatibilbe JSON-RPC server that has a native Telos account associated with it. This account is used for broadcasting transactions to the EVM contract. &#x20;
+* EVM transactions are relayed to the EVM contract via a Telos native transaction, which means Telos native resources still are needed in the transaction lifecycle. This process is managed by the Ethereum compatibilbe JSON-RPC server that has a native Telos account associated with it which manages the resources. This account is used for broadcasting transactions to the EVM contract. &#x20;
 * EVM smart contract uses native TLOS token as gas instead of ETH. More can be read on gas fees [here](gas-fees.md).
 
 ## Sentnl Approved EVM
