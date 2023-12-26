@@ -1,3 +1,5 @@
+# Documentaiton is now maintained in [telos-docs](https://github.com/telosnetwork/telos-docs) 
+
 ---
 description: Home to the Fastest EVM.
 ---
